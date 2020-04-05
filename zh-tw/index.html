@@ -1,3 +1,8 @@
+<!--
+	Author: Chen Hsin-Yu
+	Company: EVERGREAT YOTA MACHINE CO., LTD.
+	Website: www.evergreatmc.com.tw
+-->
 <!DOCTYPE HTML>
 
 <html>
@@ -22,14 +27,14 @@
 	                $(".main-header .nav-default li a").css("font-weight", "400")
 	                $(".main-header .nav-default ul a").css("color", "#555555")
 	                $(".main-header").css("background", "transparent")
-	                $(".main-header-default > .nav-left").css("display", "none")
+	                $(".main-header-default > .logo a").css("display", "none")
 	                $(".main-header-default .main-nav").css("margin", "0px auto")
 	            }
 	            else if($(window).scrollTop()>=$(".banner").offset().top){
 	                $(".main-header .nav-default li a").css("color", "#555555")
 	                $(".main-header .nav-default li a").css("font-weight", "300")
 	                $(".main-header").css("background", "#ffffff")
-	                $(".main-header-default > .nav-left").css("display", "flex")
+	                $(".main-header-default > .logo a").css("display", "block")
 	                $(".main-header-default .main-nav").css("margin", "0px 0px")
 	            }
 	        })
@@ -40,10 +45,12 @@
 		<!-- Header -->
 		<header class="main-header main-header-default">
 			<input type="checkbox" name="" id="menu-control">
-			<div class="nav-left">
+			<h1 class="logo"><a href="index.html">永大機械股份有限公司</a></h1>
+			<!--div class="nav-left">
 				<img src="../images/logos-1.png">
 				<a class="logo" href="index.html">永大機械股份有限公司</a>
-			</div>
+
+			</div-->
 			<!--div class="nav-lang">
 				<i class="icon fa-globe"></i> 繁體中文｜<a href="../en/index.html">English</a>
 			</div-->
@@ -85,55 +92,48 @@
 		<section class="banner">
 			<div class="inner">
 				<img src="../images/index-pic/logo-banner.png" width="250" height="250">
-				<h1>壓鑄機製造的最佳選擇</h1>冷室壓鑄機 150-800噸/給湯機/取出機/噴霧機
+				<h1>永大機械股份有限公司</h1>
+				<h2>Evergreat Yota Machine Co., Ltd.</h2>
 			</div>
-			<!--<video autoplay loop muted playsinline src="images/BRB1.mp4"></video>-->
+			<!--<h3>壓鑄機製造的最佳選擇</h3>冷室壓鑄機 150-800噸/給湯機/取出機/噴霧機
+				<video autoplay loop muted playsinline src="images/BRB1.mp4"></video>-->
 			<video autoplay loop muted controls>
 				<source type="video/mp4" src="../images/banner_brb1.mp4"></source>
 			</video>
 		</section>
 
 		<!-- Highlights -->
-			<section class="wrapper">
-				<div class="inner">
-					<div class="brief-intro">
-						<h2><b>關於我們</b></h2>
-						<p>永大機械為冷室壓鑄機及週邊設備的專業製造商，創立於1964年台南永康，於深圳亦有設立分公司。</p>
-					</div>
-					<div class="highlights">
-						<div>
-							<div class="icon fa-leaf"></div>
-							<div class="content">
-								<h3><b>品牌願景</b></h3>
-								<p>超過半世紀的壓鑄機設計製造經驗，期許客戶能透過我們的產品提升產業競爭力。</p>
-							</div>
-						</div>
-						<div>
-							<div class="icon fa-cogs"></div>
-							<div class="content">
-								<h3><b>完善服務</b></h3>
-								<p>全系列壓鑄機及周邊產品，搭配完整的售後服務，我們提供客戶最完善的服務。</p>
-							</div>
-						</div>
-						<div>
-							<div class="icon fa-rocket"></div>
-							<div class="content">
-								<h3><b>不斷創新</b></h3>
-								<p>我們致力於追求技術的突破與創新，除不定期推出新產品，系統化工廠管理更是我們最強大的後盾。</p>
-							</div>
-						</div>
-					</div>
+		<section class="brief-intro">
+			<div>
+				<h2><b>關於我們</b></h2>
+				<p>永大機械為冷室壓鑄機及其週邊的設備製造商，創立於1964年台南永康，於深圳亦有設立分公司</p>
+			</div>
+			<div class="highlights">
+				<div class="content">
+					<i class="icon fa-cogs"></i>
+					<h3><b>完善服務</b></h3>
+					<p>全系列壓鑄機及周邊產品，搭配完整的售後服務，我們提供客戶最完善的服務</p>
 				</div>
-			</section>
+				<div class="content">
+					<i class="icon fa-rocket"></i>
+					<h3><b>不斷創新</b></h3>
+					<p>我們追求技術的突破與創新，不定期學習新技術並持續推出新產品</p>
+				</div>
+				<div class="content">
+					<i class="icon fa-leaf"></i>
+					<h3><b>品牌願景</b></h3>
+					<p>五十年以上壓鑄機設計製造經驗，期許客戶透過我們的產品提升產業競爭力</p>
+				</div>
+			</div>
+		</section>
 
 		<!-- CTA -->
-			<section class="brief-machine-intro">
-				<div class="brief-machine-intro-content">
-					<h2><b>我們提供最優質且經濟實惠的壓鑄設備</b></h2>
-					<p>強化的機體結構，一體式射出C型結構搭配高剛性曲手，使機台持久耐用。<br>V4N機型更配載雙獨立蓄壓器，提供更穩定的增壓壓力，以及更短的增壓建壓時間，進而產出品質優良的鑄件。</p>
-					<a href="dc-machine-intro.html">更多資訊</a>
-				</div>
-			</section>
+		<section class="brief-machine-intro">
+			<h2><b>我們提供最優質且經濟實惠的壓鑄設備</b></h2>
+			<p>強化的機體結構，一體式射出C型結構搭配高剛性曲手，使機台持久耐用。<br>V4N機型更配載雙獨立蓄壓器，提供更穩定的增壓壓力，以及更短的增壓建壓時間，進而產出品質優良的鑄件。</p>
+			<a href="dc-machine-intro.html">更多資訊</a>
+
+		</section>
 
 
 			<!---section class="rwd_slider_container_wrapper">	
@@ -147,45 +147,45 @@
 			</section>< rwd_slider_container_wrapper-->
 
 
-			<section class="brief-news">
-				<h2><b>最新消息</b></h2>
-				<div class="news">
-					<div class="news-head">
-						<span>2020 / 8 / 6 - 8 / 9<br>高雄, 台灣</span>
-					</div>
-					<div class="news-content">
-						<strong><a href="http://www.edn-mcshow.com/ks/" target="_blank">2020 KIAE高雄自動化工業展</a></strong>
-						<p>南台灣最大工業展！於高雄展覽館舉辦，我們會在攤位S3053</p>
-					</div>
+		<section class="brief-news">
+			<h2><b>最新消息</b></h2>
+			<div class="news">
+				<div class="news-head">
+					<span>2020 / 8 / 6 - 8 / 9<br>高雄, 台灣</span>
 				</div>
-				<div class="news">
-					<div class="news-head">
-						<span>2020 / 7 / 2 - 7 / 6<br>台南, 台灣</span>
-					</div>
-					<div class="news-content">
-						<strong><a href="https://cec.ctee.com.tw/ctms/" target="_blank">2020 CTMS工商時報自動化機械暨智慧製造展</a></strong>
-						<p>於南紡世貿展覽中心舉辦，我們會在攤位B532</p>
-					</div>
+				<div class="news-content">
+					<strong><a href="http://www.edn-mcshow.com/ks/" target="_blank">2020 KIAE高雄自動化工業展</a></strong>
+					<p>南台灣最大工業展！於高雄展覽館舉辦，我們會在攤位S3053</p>
 				</div>
-				<div class="news">
-					<div class="news-head">
-						<span>2020 / 6 / 4 - 6 / 7<br>達卡, 孟加拉</span>
-					</div>
-					<div class="news-content">
-						<strong><a href="http://www.bangla-expo.com/IPF/" target="_blank">IPF 國際塑橡膠.包裝.印刷工業展</a></strong>
-						<p>於ICCB 達卡孟加拉舉辦，我們會在攤位152</p>
-					</div>
+			</div>
+			<div class="news">
+				<div class="news-head">
+					<span>2020 / 7 / 2 - 7 / 6<br>台南, 台灣</span>
 				</div>
-				<div class="news">
-					<div class="news-head">
-						<span>2020 / 2 / 20<br>永大機械, 台灣</span>
-					</div>
-					<div class="news-content">
-						<strong>新版官方網站及Logo正式上線</strong>
-						<p>新網站正式上線，簡潔明瞭的介面設計，搭配別具辨識度的logo，提供更佳的使用者體驗</p>
-					</div>
+				<div class="news-content">
+					<strong><a href="https://cec.ctee.com.tw/ctms/" target="_blank">2020 CTMS工商時報自動化機械暨智慧製造展</a></strong>
+					<p>於南紡世貿展覽中心舉辦，我們會在攤位B532</p>
 				</div>
-			</section>
+			</div>
+			<div class="news">
+				<div class="news-head">
+					<span>2020 / 6 / 4 - 6 / 7<br>達卡, 孟加拉</span>
+				</div>
+				<div class="news-content">
+					<strong><a href="http://www.bangla-expo.com/IPF/" target="_blank">IPF 國際塑橡膠.包裝.印刷工業展</a></strong>
+					<p>於ICCB 達卡孟加拉舉辦，我們會在攤位152</p>
+				</div>
+			</div>
+			<div class="news">
+				<div class="news-head">
+					<span>2020 / 2 / 20<br>永大機械, 台灣</span>
+				</div>
+				<div class="news-content">
+					<strong>新版官方網站及Logo正式上線</strong>
+					<p>新網站正式上線，簡潔明瞭的介面設計，搭配別具辨識度的logo，提供更佳的使用者體驗</p>
+				</div>
+			</div>
+		</section>
 
 		<!-- Footer -->
 		<footer class="footer">
