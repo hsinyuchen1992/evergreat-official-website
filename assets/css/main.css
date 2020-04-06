@@ -1016,6 +1016,9 @@ ul.actions {
       .row.gtr-200.gtr-uniform > * {
         padding-top: 2.5rem; } }
 
+.row > .col-7 > h2 {
+  font-size: 22px;
+}
 /* Icon */
 .icon {
   text-decoration: none;
@@ -1165,6 +1168,25 @@ body .is-preload .banner:before {
     height: 5rem;
   }
 }
+
+.main-header > .logo-en a {
+  display:block;
+  background: url("../../images/index-pic/logo-en.png") no-repeat;
+  background-size: contain;
+  background-position: left center;
+  height: 4.5rem;
+  width: 350px;
+  float:left;
+  text-indent:101%;
+  overflow:hidden;
+  white-space:nowrap;
+}
+@media screen and (max-width: 480px) {
+  .main-header > .logo-en a {
+    background-size: 60%;
+    height: 5rem;
+  }
+}
 /*
 .main-header > .nav-left {
   display: flex;
@@ -1282,7 +1304,9 @@ body .is-preload .banner:before {
 .main-header-default > .logo a {
   display: none;
 }
-
+.main-header-default > .logo-en a {
+  display: none;
+}
 
 
 .lang-choose {
@@ -1875,6 +1899,10 @@ body .is-preload .banner:before {
 .about-content .intro-item .intro-text{
   padding: 20px;
   float: right;    
+}
+.about-content .intro-item .intro-text .en-h2 {
+  font-size: 22px;
+  font-weight: 400;
 }
 @media screen and (max-width: 769px){
   .about-content .intro-item{
@@ -2496,6 +2524,17 @@ body .is-preload .banner:before {
   }
 }
 
+  .img-wrap .text-en{
+    color: #000;
+    font-size: 20px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
 /* Footer */
 footer {
   background-color: #272727;
