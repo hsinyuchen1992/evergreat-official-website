@@ -23,16 +23,19 @@
 		<script>
 			$(window).scroll(function(){
 				if($(window).scrollTop()>=$(".main-header").offset().top && $(window).scrollTop()<$(".banner").offset().top){
-	            	$(".main-header .nav-default li a").css("color", "#ffffff")
-	                $(".main-header .nav-default li a").css("font-weight", "400")
+	            	$(".main-header .nav-default > li a").css("color", "#ffffff")
+	                $(".main-header .nav-default > li a").css("font-weight", "400")
 	                $(".main-header .nav-default ul a").css("color", "#555555")
+	                $(".main-header .nav-default ul ul a").css("color", "#fff")
 	                $(".main-header").css("background", "transparent")
 	                $(".main-header-default > .logo a").css("display", "none")
 	                $(".main-header-default .main-nav").css("margin", "0px auto")
 	            }
 	            else if($(window).scrollTop()>=$(".banner").offset().top){
-	                $(".main-header .nav-default li a").css("color", "#555555")
-	                $(".main-header .nav-default li a").css("font-weight", "300")
+	                $(".main-header .nav-default > li a").css("color", "#555555")
+	                $(".main-header .nav-default > li a").css("font-weight", "300")
+	                $(".main-header .nav-default ul a").css("color", "#555555")
+	                $(".main-header .nav-default ul ul a").css("color", "#fff")
 	                $(".main-header").css("background", "#ffffff")
 	                $(".main-header-default > .logo a").css("display", "block")
 	                $(".main-header-default .main-nav").css("margin", "0px 0px")
@@ -76,10 +79,10 @@
 					</ul>
 				</li>
 				<li><a>下載專區</a>
-				<ul>
-					<li><a href="catalog.html">電子目錄</a></li>
-					<li><a href="manual.html">操作手冊</a></li>
-				</ul>
+					<ul>
+						<li><a href="catalog.html">電子目錄</a></li>
+						<li><a href="manual.html">操作手冊</a></li>
+					</ul>
 				</li>
 				<li class="lang-choose"><a href="../en/index.html"><i class="icon fa-globe"></i><b> EN</b></a></li>
 				<!--li><a href="https://www.104.com.tw/company/avupo5k">徵才資訊</a></li-->

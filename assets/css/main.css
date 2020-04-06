@@ -957,6 +957,8 @@ ul.actions {
     margin-left: 91.6666666667%; }
   .row > .col-12-xsmall {
     width: 100%; }
+  .row > .col-12-xsmall iframe {
+    width: 100%; }
   .row > .off-12-xsmall {
     margin-left: 100%; }
   .row.gtr-0 {
@@ -1222,16 +1224,19 @@ body .is-preload .banner:before {
   right: 1em;
 }
 .main-header .main-nav ul {/*第二層樣式開始*/
-  list-style-type: none;
-  background: #F0F0F0;
   position: absolute;
   top: 100%;
   width: 150px;
+  background: #DDDDDD;
+  list-style-type: none;
   /*隱藏次選單*/
   display: none;
 }
 .main-header .main-nav li:hover > ul{
   display: block;
+}
+.main-header .main-nav ul a {
+  color: #444;
 }
 .main-header .main-nav ul a:hover {
   /* 滑鼠滑入按鈕變色*/
@@ -1241,8 +1246,14 @@ body .is-preload .banner:before {
   /*第三層以後的選單出現位置與第二層不同*/
   z-index: 999;
   top: 10px;
-  left: 90%;
-  background-color: #E0E0E0;
+  left: 100%;
+  background-color: #888888;
+}
+.main-header .main-nav ul a {
+  color: #555;
+}
+.main-header .main-nav ul ul a {
+  color: #fff;
 }
 
 .main-header-default {
@@ -1254,16 +1265,22 @@ body .is-preload .banner:before {
 /*.main-header-default > .nav-left{
   display: none;
 }*/
-.main-header-default > .logo a {
-  display: none;
-}
-.main-header .nav-default li a {
+
+.main-header .nav-default > li a {
   color: #fff;
   font-weight: 400;
 }
-.main-header .nav-default ul a{
+.main-header .nav-default ul a {
   color: #555;
 }
+.main-header .nav-default ul ul a {
+  color: #fff;
+}
+.main-header-default > .logo a {
+  display: none;
+}
+
+
 
 .lang-choose {
   font-size: 14px;
@@ -1352,6 +1369,9 @@ body .is-preload .banner:before {
     position: relative;
     background-color: #F0F0F0;
   }
+  .main-header .main-nav ul a {
+  color: #555;
+  }
   .main-header .main-nav ul ul {
     /*第三層以後的選單出現位置與第二層不同*/
     width: 100%;
@@ -1360,6 +1380,10 @@ body .is-preload .banner:before {
   }
   .main-header .menu-btn{
     display: block;
+  }
+  .main-header .nav-default li a {
+    color: #555;
+    font-weight: 400;
   }
 }
 
@@ -1405,7 +1429,7 @@ body .is-preload .banner:before {
 /* Wrapper */
 .wrapper {
   position: relative;
-  padding: 8rem 0 6rem 0 ;
+  padding: 4rem 0 ;
   z-index: 1;
 }
   @media screen and (max-width: 1280px) {
@@ -1445,8 +1469,8 @@ body .is-preload .banner:before {
   text-align: center;
   height: 100%;/*43rem, 1600px*/
   width: 100%;
-  min-height: 100% !important;
-  min-width: 100% !important;
+  /*min-height: 100% !important;
+  min-width: 100% !important;*/
 }
 .banner .inner {
     z-index: 3;
@@ -1471,20 +1495,23 @@ body .is-preload .banner:before {
 }
 .banner video {
     position: absolute;
-    -moz-transform: translateX(50%) translateY(50%);
+    /*-moz-transform: translateX(50%) translateY(50%);
     -webkit-transform: translateX(50%) translateY(50%);
     -ms-transform: translateX(50%) translateY(50%);
     transform: translateX(50%) translateY(50%);
     overflow: hidden;
     bottom: 50%;
-    right: 50%;
+    right: 50%;*/
+    top: 0;
+    left: 0;
     /*min-height: 100%;
     min-width: 100%;
     height: auto;
     width: auto;*/
-    min-height: 100%;
+    overflow: hidden;
     height: auto;
-    width: auto;
+    width: 100%;
+    min-height: 100%;
 }
 /*.banner:after {
     position: absolute;
@@ -1510,8 +1537,14 @@ body .is-preload .banner:before {
     .banner h2 {
       font-size: 1rem;
     }
-}
 
+}
+@media screen and (max-width: 769px){
+    .banner video {
+      height: 100%;
+      width: auto;
+    }
+}
 
 
 /* 首頁的公司簡介 */
@@ -1757,8 +1790,7 @@ body .is-preload .banner:before {
 /* 產品頁面連結 */
 .inner {
   margin: 0 auto;
-  width: 80rem;
-  max-width: calc(100% - 5rem);
+  width: 80%;
 }
 .inner .title{
   color: #444;
@@ -1778,7 +1810,7 @@ body .is-preload .banner:before {
 
 @media screen and (max-width: 480px) {
   .inner {
-    max-width: calc(100% - 3rem);
+    width: calc(100% - 4rem);
   }
   .links {
     display: none;
@@ -1808,11 +1840,11 @@ body .is-preload .banner:before {
   }
 
 .about-content .intro-item-head {
-  margin: 2rem;
   display: flex;
 }
 .about-content .intro-item-head img {
-  width: 30%;
+  width: 409px;
+  height: 170px;
   margin: 3rem;
 }
 .about-content .intro-item-head .intro-text {
@@ -1858,6 +1890,7 @@ body .is-preload .banner:before {
   }
   .about-content .intro-item-head img {
     width: 100%;
+    height: auto;
     margin: 0;
     padding-top: 1rem;
   }
@@ -1878,7 +1911,7 @@ body .is-preload .banner:before {
 .large p                  { font-size: 16px; width: 600px; }
 
 /* FOR IMAGE DEMO */
-.small img                { height: 350px;}
+.small img                { height: 400px;}
 
 @media screen and (max-width: 769px){
   .small img {
@@ -1897,13 +1930,9 @@ body .is-preload .banner:before {
   margin-bottom: 30px;
   display: flex;
 }
-.product-intro .small img {
-  width: 80%;
-  height: auto;
-}
 .product-intro .text-intro {
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 0;
 }
 
@@ -1993,6 +2022,7 @@ body .is-preload .banner:before {
   }
   .product-intro .text-intro {
     position: relative;
+    right: 0;
   }
   .wrap{
     width: 100%;
@@ -2030,12 +2060,12 @@ body .is-preload .banner:before {
   width: 65%;
   right: 0px;
   position: relative;
-  margin-left: 390px;
+  margin-left: 33%;
 }
 .machine-body .machine-body-txt{
   position: absolute;
   padding: 45px 50px;
-  width: 48%;
+  width: 33%;
   line-height: 28px;
 }
 @media screen and (max-width: 769px){
@@ -2078,20 +2108,22 @@ body .is-preload .banner:before {
 }
 .characteristic-content .ch-item{
   display: flex;
-  align-items: center;
+  align-items: top;
   width: 513px;
   height: 200px;
-  padding-right: 20px;
+  margin: 0 1.5rem 1.5rem 0;
 }
 /*.characteristic .ch-item:nth-child(2n+1){
   flex-direction:row-reverse;
   text-align: right;
 }*/
 .characteristic-content .ch-item img{
-  height: 130px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+  border: .5px solid #fff;
+  height: 150px;
 }
 .characteristic-content .ch-item .ch-text{
-  padding: 20px;
+  padding-left: 20px;
 }
 .characteristic-content .ch-item .ch-text h3{
   font: #000;
@@ -2294,13 +2326,14 @@ body .is-preload .banner:before {
 .v4n-adjust {
   display: flex;
   margin-top: 45px;
+  align-items: center;
 }
 .v4n-adjust img {
   width: 300px;
   height: auto;
   border: #ccc solid 1px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
-  margin: 0px 20px;
+  margin-right: 30px;
 }
 .v4n-adjust h4 {
   text-align: center;
