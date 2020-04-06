@@ -1232,6 +1232,9 @@ body .is-preload .banner:before {
   /*隱藏次選單*/
   display: none;
 }
+.main-header .main-nav-en ul {
+  width: 200px;
+}
 .main-header .main-nav li:hover > ul{
   display: block;
 }
