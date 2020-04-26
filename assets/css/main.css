@@ -1474,23 +1474,24 @@ body .is-preload .banner:before {
 
 /* Banner */
 .banner {
-  -ms-flex-align: center;
+  /*-ms-flex-align: center;
   -ms-flex-pack: center;
-  background-color: #000;
-  color: rgba(255, 255, 255, 0.85);
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
-  align-items: center;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
-  display: flex;
   -moz-justify-content: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
-  justify-content: center;
-  display: -ms-flexbox;
+  justify-content: flex-start;
+  display: -ms-flexbox;*/
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.85);
+
   overflow: hidden;
   text-align: center;
   height: 100%;
@@ -1506,12 +1507,18 @@ body .is-preload .banner:before {
     -ms-transition: opacity 1s ease, -ms-transform 1s ease;
     transition: opacity 1s ease, transform 1s ease;
 }
+.banner img {
+  width: 400px;
+}
 .banner h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  padding-top: 1.5rem;
+    font-size: 90px;
+}
+.banner .h1-en {
+    font-size: 48px;
 }
 .banner h2 {
-    font-size: 2rem;
+    font-size: 22px;
 }
 .banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6, .banner p {
     color: #ffffff;
@@ -1522,7 +1529,7 @@ body .is-preload .banner:before {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  -webkit-filter:grayscale(1) brightness(.6);
+  -webkit-filter:brightness(.6) grayscale(1)/*saturate(0.5)*/;
 }
 
 @media screen and (max-width: 480px) {
