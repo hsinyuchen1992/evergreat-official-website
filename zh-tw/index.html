@@ -13,6 +13,8 @@
 		<meta name="description" content="永大機械精密自動化冷室壓鑄機，具備完善多段控制系統 品質穩定產能高，五十年以上經驗，值得信賴的設備製造商。使用壽命長，品質穩定，高剛性、不變形，耐重負荷。專業研究開發，享譽全球。" />
 		<meta name="keywords" content="die casting machine, auto ladle, auto spray, auto extractor, die casting" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" / >
+		<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
 
 		<!-- Scripts -->
 		<script src="https://kit.fontawesome.com/5049d74f05.js" crossorigin="anonymous"></script>
@@ -21,6 +23,10 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
 		<script>
 			$(window).scroll(function(){
 				if($(window).scrollTop()>=$(".main-header").offset().top && $(window).scrollTop()<$(".banner").offset().top){
@@ -85,10 +91,10 @@
 
 		<!-- Banner -->
 		<section class="banner">
-			<video autoplay loop muted controls id="bg-video">
+			<video autoplay loop muted id="bg-video">
 				<source type="video/mp4" src="../images/banner_brb1.mp4"></source>
 			</video>
-			<div class="inner">
+			<div class="banner-content">
 				<!--img src="../images/index-pic/logo-banner.png" width="250" height="250">
 				<h1>永大機械股份有限公司</h1>
 				<h2>Evergreat Machinery Co., Ltd.</h2-->
@@ -99,7 +105,7 @@
 		</section>
 
 		<!-- Highlights -->
-		<section class="brief-intro">
+		<section class="brief-intro wow fadeInUp" data-wow-duration="3s" data-wow-delay="1s">
 			<div>
 				<h2><b>關於永大</b></h2>
 				<p>永大機械為冷室壓鑄機及其週邊的設備製造商，創立於1964年台南永康<br>於1999年在廣東省深圳市設立分公司並投入中國大陸市場，近期更將商業觸角延伸至四柱型油壓機，以求進入更廣大的市場。</p>
@@ -124,13 +130,13 @@
 		</section>
 
 		<!-- CTA -->
-		<section class="brief-machine-intro">
+		<section class="brief-machine-intro wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
 			<h2><b>我們提供最優質且經濟實惠的壓鑄設備</b></h2>
 			<p>強化的機體結構，一體式射出C型結構搭配高剛性曲手，使機台持久耐用。<br>V4N機型更配載雙獨立蓄壓器，提供更穩定的增壓壓力，以及更短的增壓建壓時間，進而產出品質優良的鑄件。</p>
 			<a href="dc-machine-intro.html">更多資訊</a>
 		</section>
 
-		<section class="brief-news">
+		<section class="brief-news wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
 			<h2><b>最新消息</b></h2>
 			<div class="news">
 				<div class="news-head">
@@ -198,3 +204,39 @@
 		</footer>
 	</body>
 </html>
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2016 Thomas Grainger.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+Portions of this wow.js Software may utilize the following copyrighted material, the use of which is hereby acknowledged.
+
+WOW: https://github.com/matthieua/WOW/tree/20848c410fe32d161c2330e1d261b59512094f81
+
+Copyright (C) 2014; Matthieu Aussaguel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->

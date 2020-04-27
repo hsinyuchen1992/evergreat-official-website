@@ -1489,6 +1489,7 @@ body .is-preload .banner:before {
   display: -ms-flexbox;*/
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #000;
   color: rgba(255, 255, 255, 0.85);
 
@@ -1496,7 +1497,7 @@ body .is-preload .banner:before {
   text-align: center;
   height: 100%;
 }
-.banner .inner {
+.banner .banner-content {
     z-index: 3;
     -moz-transform: scale(1.0);
     -webkit-transform: scale(1.0);
@@ -1512,7 +1513,7 @@ body .is-preload .banner:before {
 }
 .banner h1 {
   padding-top: 1.5rem;
-    font-size: 90px;
+  font-size: 90px;
 }
 .banner .h1-en {
     font-size: 48px;
@@ -1539,13 +1540,12 @@ body .is-preload .banner:before {
     padding: 4rem 0rem;
     overflow: hidden;
   }
-    .banner h1 {
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-    }
-    .banner h2 {
-      font-size: 1rem;
-    }
+  .banner h1 {
+    font-size: 60px;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
 
 }
 @media screen and (max-width: 769px){
@@ -1553,6 +1553,9 @@ body .is-preload .banner:before {
       height: 100%;
       width: auto;
     }
+  .banner .banner-content {
+    width: 80%;
+  }
 }
 
 
@@ -1560,7 +1563,7 @@ body .is-preload .banner:before {
 .brief-intro {
   text-align: center;
   position: relative;
-  padding: 3.5rem 2rem;
+  padding: 5rem 2rem 7rem;
   color: #000;
   background: #F5F5F5;
 }
@@ -1808,7 +1811,8 @@ body .is-preload .banner:before {
   width: 120px;
 }
 .inner .links-ph a {
-  width: 180px;
+  width: auto;
+  padding: 0 1rem;
 }
 .inner .list{
   color: #444;
