@@ -14,6 +14,7 @@
 		<meta name="keywords" content="die casting machine, auto ladle, auto spray, auto extractor, die casting" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" / >
+		<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
 
 		<!-- Scripts -->
 		<script src="https://kit.fontawesome.com/5049d74f05.js" crossorigin="anonymous"></script>
@@ -22,6 +23,10 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
 		<script>
 			$(window).scroll(function(){
 				if($(window).scrollTop()>=$(".main-header").offset().top && $(window).scrollTop()<$(".banner").offset().top){
@@ -44,9 +49,21 @@
 	            }
 	        })
 		</script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K5J5W9');</script>
+		<!-- End Google Tag Manager -->
 	</head>
 
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 		<!-- Header -->
 		<header class="main-header main-header-default">
 			<input type="checkbox" name="" id="menu-control">
@@ -83,8 +100,6 @@
 			</nav>
 		</header>
 
-			
-
 		<!-- Banner -->
 		<section class="banner">
 			<video autoplay loop muted id="bg-video">
@@ -92,30 +107,32 @@
 			</video>
 			<div class="banner-content">
 				<!--img src="../images/index-pic/logo-banner.png" width="250" height="250"-->
-				<img src="../images/index-pic/banner-test.png">
-				<h1 class="h1-en">The manufacturer for<br>cold chamber<br>die casting machines</h1>
-				<h2>150-800 tons / Peripherals / Press Machine</h2>
+				<img class="wow fadeInDown" data-wow-duration="1.5s" src="../images/index-pic/banner-test.png">
+				<div class="wow fadeInUp" data-wow-duration="1.5s">
+					<h1 class="h1-en">The manufacturer for<br>cold chamber<br>die casting machines</h1>
+					<h2>150-800 tons / Peripherals / Press Machine</h2>
+				</div>
 			</div>
 		</section>
 
 		<!-- Highlights -->
 		<section class="brief-intro">
-			<div>
+			<div class="wow fadeInUp" data-wow-duration="1.5s">
 				<h2><b>About EVERGREAT</b></h2>
 				<p>EVERGREAT, which was founded in 1964 Yongkang, Tainan City, is a manufacturer for cold chamber die casting machines & peripheral equipments. The branch company Machinery Co. was established in ShenZhen, China.</p>
 			</div>
 			<div class="highlights">
-				<div class="content">
+				<div class="content wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".25s">
 					<i class="icon fa-cogs"></i>
 					<h3><b>Comprehensive Service</b></h3>
 					<p>We provide after-sales service for our products.</p>
 				</div>
-				<div class="content">
+				<div class="content wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
 					<i class="icon fa-rocket"></i>
 					<h3><b>Innovating Constantly</b></h3>
 					<p>We keep innovating and release new products periodically.</p>
 				</div>
-				<div class="content">
+				<div class="content wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".75s">
 					<i class="icon fa-leaf"></i>
 					<h3><b>Future Envision</b></h3>
 					<p>We help our clients to success by keeping on industrial trends.</p>
@@ -125,15 +142,16 @@
 
 		<!-- CTA -->
 		<section class="brief-machine-intro">
-			<h2 class="h2-en"><b>Best Choice for Die-casting Machine</b></h2>
-			<p>Integrated injection construction with rigid toggles extends machine longevity.<br>V4N-series produces more stable intensified pressure and requires less time for building pressure. That improves efficiency and produces good quality die cast products.</p>
-			<a href="dc-machine-intro.html">More</a>
-
+			<h2 class="h2-en wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".5s"><b>Best Choice for Die-casting Machine</b></h2>
+			<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
+				<p>Integrated injection construction with rigid toggles extends machine longevity.<br>V4N-series produces more stable intensified pressure and requires less time for building pressure. That improves efficiency and produces good quality die cast products.</p>
+				<a href="dc-machine-intro.html">More</a>
+			</div>
 		</section>
 
 		<section class="brief-news">
-			<h2><b>News</b></h2>
-			<div class="news">
+			<h2 class="wow fadeInLeft" data-wow-duration="1.5s"><b>News</b></h2>
+			<div class="news wow fadeInRight" data-wow-duration="1.5s">
 				<div class="news-head">
 					<span>2020 / 1 / 20 - 1 / 23<br>Dhaka, Bangladesh</span>
 				</div>
@@ -142,7 +160,7 @@
 					<p>Location: International Convention City Bashundhara (ICCB, Dhaka) / Booth no. 152</p>
 				</div>
 			</div>
-			<div class="news">
+			<div class="news wow fadeInLeft" data-wow-duration="1.5s">
 				<div class="news-head">
 					<span>2020 / 11 / 10 - 11 / 14<br>Taichung, Taiwan</span>
 				</div>
@@ -151,7 +169,7 @@
 					<p>Taichung International Exhibition Center(TCIEC ) & Greater Taichung International Expo Center</p>
 				</div>
 			</div>
-			<div class="news">
+			<div class="news wow fadeInRight" data-wow-duration="1.5s">
 				<div class="news-head">
 					<span>2020 / 8 / 6 - 8 / 9<br>Kaohsiung, Taiwan</span>
 				</div>
@@ -160,7 +178,7 @@
 					<p>Location: Kaohsiung Exhibition Center / Booth no. S3053</p>
 				</div>
 			</div>
-			<div class="news">
+			<div class="news wow fadeInLeft" data-wow-duration="1.5s">
 				<div class="news-head">
 					<span>2020 / 7 / 2 - 7 / 6<br>Tainan, Taiwan</span>
 				</div>
