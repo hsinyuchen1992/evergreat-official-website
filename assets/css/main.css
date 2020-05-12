@@ -2290,7 +2290,7 @@ body .is-preload .banner:before {
 }
 .elec-sys .sys-intro {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
  /* border-left: #fff solid 1px;
   border-right: #fff solid 1px;*/
 }
@@ -2298,11 +2298,15 @@ body .is-preload .banner:before {
   width: 400px;
   height: 530px;
 }
-
 .elec-sys h3 {
   font-weight: 400;
 }
-
+.elec-sys .sys-intro .sys-intro-content{
+  display: flex;
+}
+.elec-sys .sys-intro .sys-intro-content .text {
+  padding-right: 20px;
+}
 @media screen and (max-width: 480px){
   .elec-sys {
     padding: 1.5rem;
@@ -2315,7 +2319,14 @@ body .is-preload .banner:before {
     height: auto;
   }
 }
-
+@media screen and (max-width: 1280px){
+  .elec-sys .sys-intro{
+    justify-content: space-between;
+  }
+  .elec-sys .sys-intro .sys-intro-content{
+    display: block;
+  }
+}
 .sys-mode {
   padding: 60px 0px 40px;
   background: #FCFCFC;/*F1FBEA;/*linear-gradient(180deg, #1D3A3A 0%, #F1FBEA 100%);/*#F1FBEA;/*FCFCFC;/*D0D0D0;/*b6cfae;*/
