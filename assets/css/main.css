@@ -1290,7 +1290,7 @@ body .is-preload .banner:before {
   display: none;
 }
 .main-header .main-nav-en ul {
-  width: 200px;
+  width: 210px;
 }
 .main-header .main-nav li:hover > ul{
   display: block;
@@ -1880,7 +1880,7 @@ body .is-preload .banner:before {
   display: inline-block;
   padding: 0 .5rem;
   border-right: 1px solid #000;
-  width: 120px;
+  width: 132px;
 }
 .inner .links-ph a {
   width: auto;
@@ -2117,6 +2117,7 @@ body .is-preload .banner:before {
   margin-bottom: 20px;
 
   background-color: #fff;
+  border: #FCFCFC solid 1px;
 }
 .wrap .item h3 {
   color: #4F4F4F;
@@ -2125,7 +2126,7 @@ body .is-preload .banner:before {
 }
   .wrap .item:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
   }
 
 /*.wrap .item .text:before{
