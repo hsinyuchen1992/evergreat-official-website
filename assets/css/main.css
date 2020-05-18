@@ -2122,7 +2122,8 @@ body .is-preload .banner:before {
 .wrap .item h3 {
   color: #4F4F4F;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: 500;
 }
   .wrap .item:hover {
     transform: translateY(-10px);
