@@ -1787,7 +1787,7 @@ body .is-preload .banner:before {
   margin: 2rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .yt-videos iframe{
   margin: 1rem;
@@ -1942,7 +1942,7 @@ body .is-preload .banner:before {
   }
   .inner .list-sm .links summary {
     height: 30px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .inner .list-sm .links ul {
     list-style-type:none;
@@ -1953,14 +1953,37 @@ body .is-preload .banner:before {
     line-height: 180%;
   }
 }
-
+@media screen and (max-width: 480px){
+  .inner .list-sm .links summary {
+    height: 30px;
+    font-size: 18px;
+  }
+}
 /*關於永大*/
+/*.about-content .intro-item-head:before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-top: 45px solid transparent;
+  border-left: 550px solid #F0F0F0;
+  border-right: 550px solid #F0F0F0;
+  transform: translateY(-100%);
+  z-index: 1;
+}*/
+
 #main .about-content {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
-  padding: 2rem 10rem;
+  padding: 2rem;
+  color: #5B5B5B;
+}
+#main .about-content h2 {
+  font-weight: 400;
 }
 #main .about-content p::first-letter {
   font-size: 28px;
@@ -1979,6 +2002,7 @@ body .is-preload .banner:before {
 .about-content .intro-item-head {
   display: flex;
   padding: 3rem 1rem;
+  width: 1150px;
 }
 .about-content .intro-item-head img {
   width: 409px;
@@ -1992,25 +2016,33 @@ body .is-preload .banner:before {
     display:flex;
     align-items:center;
     padding: 1rem 1rem;
+    width: 1150px;
   }
   
 .about-content .intro-item:nth-child(2n + 1){
     flex-direction:row-reverse;
     background-color: #fff;
 }
+/*.about-content .intro-item:before{
+  content: '';
+  width: 30px;
+  height: 500px;
+  box-shadow: 10px 10px rgba(0, 0, 0);
+  z-index: 1;
+}*/
 .about-content .intro-item img{
   width: 500px;
   display:block;
   margin: 0 20px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.15);
+  border: 2px solid #fff;
 }
 .about-content .intro-item .intro-text{
   padding: 20px;
-  float: right;    
+  float: right;
 }
 .about-content .intro-item .intro-text .en-h2 {
   font-size: 30px;
-  font-weight: 500;
 }
 
 @media screen and (max-width: 769px){
