@@ -1671,9 +1671,9 @@ body .is-preload .banner:before {
   margin: 2rem auto;
 }
 .brief-machine-intro p {
-  width: 45%;
+  width: 800px;
   margin: 0 auto;
-
+  font-weight: 200;
 }
 .brief-machine-intro a {
   line-height: 5rem;
@@ -1695,93 +1695,6 @@ body .is-preload .banner:before {
     }
   }
 
-.rwd_slider_container_wrapper {
-  background-color: #fff;
-  height: 450px;
-}
-
-.rwd_slider_container_wrapper .slider_container {
-  position: relative;
-  height: 100%;
-}
-.rwd_slider_container_wrapper .slider_container img {
-  position: absolute;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-animation: round 20s linear infinite;
-  animation: round 20s linear infinite;
-  height: 400px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@-webkit-keyframes round {
-  5% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    /* 0 - 1秒 淡入*/
-  }
-  20% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    /* 1- 5秒靜止*/
-  }
-  25% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    /* 5-6秒淡出*/
-  }
-}
-@keyframes round {
-  5% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    /* 0 - 1秒 淡入*/
-  }
-  20% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    /* 1- 5秒靜止*/
-  }
-  25% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    /* 5-6秒淡出*/
-  }
-}
-.rwd_slider_container_wrapper .slider_container img:nth-child(5) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-.rwd_slider_container_wrapper .slider_container img:nth-child(4) {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-.rwd_slider_container_wrapper .slider_container img:nth-child(3) {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
-.rwd_slider_container_wrapper .slider_container img:nth-child(2) {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
-}
-.rwd_slider_container_wrapper .slider_container img:nth-child(1) {
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
-}
-
-/*.rwd_slider_container_wrapper .slider_container:hover img {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}*/
-@media screen and (max-width: 480px){
-  .rwd_slider_container_wrapper {
-    height: 250px;
-  }
-  .rwd_slider_container_wrapper .slider_container img {
-    height: 200px;
-  }
-}
-
 /*YouTube*/
 .yt-videos{
   margin: 2rem 0;
@@ -1792,11 +1705,6 @@ body .is-preload .banner:before {
 .yt-videos iframe{
   margin: 1rem;
 }
-
-
- 
-
-
 @media screen and (max-width: 769px){
   .yt-videos{
     display: block;
@@ -1822,12 +1730,12 @@ body .is-preload .banner:before {
 
 /*首頁的新聞*/
 .brief-news {
-  padding: 3rem 12.5%;
+  padding: 3rem 5%;
   margin: 0px auto;
   background: #fff;
 }
-.brief-news a {
-  color: #000;
+.brief-news h2 {
+  padding-left: 30px;
 }
 .brief-news .news {
   display: flex;
@@ -1841,6 +1749,7 @@ body .is-preload .banner:before {
 .brief-news .news .news-head {
   width: 30%;
   text-align: left;
+  padding-left: 30px;
 }
 .brief-news .news .news-head span {
   font-size: 14px;
@@ -1853,14 +1762,19 @@ body .is-preload .banner:before {
 }
 .brief-news .news .news-content strong {
   font-size: 16px;
+  color: #000;
 }
 @media screen and (max-width: 480px){
   .brief-news .news{
     display: block;
     height: auto;
   }
+.brief-news h2 {
+  padding-left: 0px;
+}
   .brief-news .news .news-head {
     width: 100%;
+    padding-left: 0px;
   }
   .brief-news .news .news-content {
     width: 100%;
@@ -1960,20 +1874,6 @@ body .is-preload .banner:before {
   }
 }
 /*關於永大*/
-/*.about-content .intro-item-head:before{
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0;
-  top: 0;
-  border-top: 45px solid transparent;
-  border-left: 550px solid #F0F0F0;
-  border-right: 550px solid #F0F0F0;
-  transform: translateY(-100%);
-  z-index: 1;
-}*/
-
 #main .about-content {
   background: #fff;
   border-radius: 10px;
@@ -2003,6 +1903,7 @@ body .is-preload .banner:before {
   display: flex;
   padding: 3rem 1rem;
   width: 1150px;
+  margin: 0 auto;
 }
 .about-content .intro-item-head img {
   width: 409px;
@@ -2017,7 +1918,8 @@ body .is-preload .banner:before {
     align-items:center;
     padding: 1rem 1rem;
     width: 1150px;
-  }
+    margin: 0 auto;
+}
   
 .about-content .intro-item:nth-child(2n + 1){
     flex-direction:row-reverse;
