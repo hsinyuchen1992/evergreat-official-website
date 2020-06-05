@@ -206,7 +206,7 @@ body, input, select, textarea {
     -webkit-transition: color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
-    color: #555555;
+    color: #383838;
     text-decoration: none;
   }
   a:hover {
@@ -1163,6 +1163,7 @@ body .is-preload .banner:before {
   justify-content: space-between;
   background: #fff;/*transparent;永大機械網頁最上方橫幅背景色*/
   color: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
   cursor: default;
   height: 4.5rem;
   line-height: 4.5rem;
@@ -1947,13 +1948,13 @@ body .is-preload .banner:before {
   font-size: 30px;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 480px){
   .about-content .intro-item{
     margin: 0;
     flex-direction:column;
   }
   .about-content .intro-item:nth-child(2n + 1){
-      flex-direction:column;
+    flex-direction:column;
   }
   .about-content .intro-item img {
     width: 100%;
@@ -2647,20 +2648,28 @@ footer .content{
   display: -ms-flex;
   display: flex;
   align-items: flex-start;
+  justify-content:center;
   position: relative;
   height: 90px;
+  width: 900px;
+  margin: 0 auto;
   font-size: 15px;
 }
 footer .content .left {
   text-align: right;
+  align-items: center;
   padding-right: 1rem;
-  border-right: #fff solid .5px;
-  width: 50%;
+  display: flex;
 }
 footer .content .right{
   text-align: left;
   padding-left: 1rem;
-  width: 50%;
+  border-left: #fff solid .5px;
+}
+footer .content .left h5 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
 }
 footer .icon {
   color: #ffffff;
@@ -2705,9 +2714,11 @@ footer .copyright .nav-lang a{
     align-items: center;
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
   footer .content .left {
     text-align: center;
+    display: block;
     padding-right: 0rem;
     border-right: 0px;
     width: 100%;
@@ -2718,6 +2729,12 @@ footer .copyright .nav-lang a{
     padding-left: 0rem;
     width: 100%;
     margin-bottom: 1rem;
+  }
+  footer .content .left h5 {
+    margin: 5px 0;
+  }
+  footer .copyright {
+    font-size: 12px;
   }
   footer .copyright .nav-lang {
     position: relative;
