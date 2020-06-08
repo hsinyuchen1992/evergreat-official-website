@@ -1915,7 +1915,8 @@ body .is-preload .banner:before {
 .about-content .intro-item-head {
   display: flex;
   padding: 3rem 1rem;
-  width: 90%;
+  min-width: 1150px;
+  width: 80%;
   margin: 0 auto;
 }
 .about-content .intro-item-head img {
@@ -1928,24 +1929,31 @@ body .is-preload .banner:before {
 
 .about-content .intro-item{
     padding: 1rem 0;
-    width: 90%;
     height: 600px;
-    margin: 0 auto;
+    /*
+    margin: 0 auto;*/
     position: relative;
 }
-.about-content .left {
-  padding-right: 300px;
+.about-content .intro-item .left {
+  min-width: 1150px;
+  width: 80%;
 }
-.about-content .right {
-  padding-left: 300px;
+.about-content .intro-item .right {
+  min-width: 1150px;
+  width: 80%;
+  position: absolute;
+  right: 0;
 }
 .about-content .intro-item .num {
   font-size: 100px;
   line-height: 110px;
 }
-.about-content .intro-item .num-1 {
-  text-align: right;
-  margin-left: 2rem;
+.about-content .intro-item .num-2 {
+  margin-right: 2rem;
+}
+.about-content .intro-item .left .left-txt {
+  width: 600px;
+  margin-top: 3rem;
 }
 /*.about-content .intro-item:nth-child(2n + 1){
     flex-direction:row-reverse;
@@ -1971,12 +1979,10 @@ body .is-preload .banner:before {
     font-size: 100px;
     line-height: 150px;
 }
-.circle-pos-2 {
+.circle-1 {
   border: 5px solid transparent;
 }
-/*.circle-pos-0 {
-  line-height: 150px;
-}
+/*
 
 .circle-pos-3 {
   opacity: .6;
@@ -2008,35 +2014,66 @@ body .is-preload .banner:before {
   box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.15);
   border: 2px solid #fff;
 }
-.about-content .intro-item .intro-text .en-h2 {
+.about-content .intro-item .en-h2 {
   font-size: 30px;
 }
 
 @media screen and (max-width: 480px){
-  .about-content .intro-item{
+  .about-content .intro-item .right {
+    min-width: 100%;
     width: 100%;
-    margin: 0;
-    flex-direction:column;
   }
-  .about-content .intro-item:nth-child(2n + 1){
-    flex-direction:column;
+  .about-content .intro-item .left {
+    min-width: 100%;
+    width: 100%;
   }
-  .about-content .intro-item img {
+  .about-content img {
     width: 100%;
     box-shadow: none;
   }
   .about-content .intro-item-head {
+    min-width: 100%;
     width: 100%;
     display: block;
+    padding: 0;
+  }
+  .about-content .intro-item-head .intro-text {
+    padding: 0;
   }
   .about-content .intro-item-head img {
     width: 100%;
     height: auto;
-    margin: 0;
-    padding-top: 1rem;
   }
   .about-content .intro-item-head p {
     width: 100%;
+  }
+  .about-content .intro-item img {
+    width: 100%;
+    box-shadow: none;
+    margin: 0px;
+    border: 0px;
+  }
+  .about-content .intro-item .left .left-txt {
+    width: 100%;
+  }
+  .about-content .h-align {
+    display: block;
+  }
+  .numberCircle {
+    height: auto;
+    padding: 0px;
+
+    border: none;
+    text-align: left;
+  }
+  .circle-0 {
+    display: none;
+  }
+  .about-content .intro-item .num-2 {
+    display: block;
+  }
+  .about-content .intro-item .cert-ch {
+    display: none;
   }
 }
 
