@@ -1915,7 +1915,7 @@ body .is-preload .banner:before {
 .about-content .intro-item-head {
   display: flex;
   padding: 3rem 1rem;
-  width: 1150px;
+  width: 90%;
   margin: 0 auto;
 }
 .about-content .intro-item-head img {
@@ -1927,12 +1927,26 @@ body .is-preload .banner:before {
 }
 
 .about-content .intro-item{
-    display:flex;
-    align-items:center;
     padding: 1rem 0;
-    width: 1150px;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
 }
-  
+.about-content .left {
+  padding-right: 300px;
+}
+.about-content .right {
+  padding-left: 300px;
+}
+.about-content .intro-item .num {
+  font-size: 100px;
+  line-height: 110px;
+}
+.about-content .intro-item .num-1 {
+  text-align: right;
+  margin-left: 2rem;
+}
 /*.about-content .intro-item:nth-child(2n + 1){
     flex-direction:row-reverse;
     background-color: #fff;
@@ -1957,35 +1971,42 @@ body .is-preload .banner:before {
     font-size: 100px;
     line-height: 150px;
 }
+.circle-pos-2 {
+  border: 5px solid transparent;
+}
 /*.circle-pos-0 {
   line-height: 150px;
-}*/
-.circle-pos-1 {
+}
+
+.circle-pos-3 {
   opacity: .6;
-  float: right;
-  transform: translateY(100px);
-}
-/*.circle-pos-2 {
   position: absolute;
-  left: 0;
+  left: 500px;
+  top: 50px;
+  z-index: 0;
 }
+
 .about-content .intro-item-2{
     position: absolute;
     right: 0;
     padding: 1rem 1rem;
     width: 1150px;
     margin: 0 auto;
+}
+
+.about-content .intro-item .intro-text{
+  padding: 20px;
 }*/
+.about-content .h-align {
+    display:flex;
+    align-items:center;
+}
 .about-content .intro-item img{
   width: 500px;
   display:block;
   margin: 0 20px;
   box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.15);
   border: 2px solid #fff;
-}
-.about-content .intro-item .intro-text{
-  padding: 20px;
-  float: right;
 }
 .about-content .intro-item .intro-text .en-h2 {
   font-size: 30px;
@@ -2014,9 +2035,8 @@ body .is-preload .banner:before {
     margin: 0;
     padding-top: 1rem;
   }
-  .about-content .intro-item-head .intro-text {
+  .about-content .intro-item-head p {
     width: 100%;
-    padding-top: 1rem;
   }
 }
 
