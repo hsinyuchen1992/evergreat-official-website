@@ -2606,18 +2606,29 @@ body .is-preload .banner:before {
   border-radius: 3px;
   margin: 0px;
 }
+.intro-press .h1-en {
+  font-size: 36px;
+}
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 769px){
   .intro-press {
     display: block;
     width: 100%;
   }
+}
+@media screen and (max-width: 480px){
   .intro-press .ch-intro .ch-img {
     display: block;
   }
+  .intro-press .ch-intro .ch-img img {
+    width: 100%;
+    height: auto;
+  }
   .intro-press ul {
     margin-right: 0rem;
+  }
+  .intro-press .h1-en {
+    font-size: 26px;
   }
 }
 
