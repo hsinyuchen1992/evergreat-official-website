@@ -1476,9 +1476,22 @@ body .is-preload .banner:before {
   background-repeat: no-repeat;
 }
 .wrapper-bg-catalog {
-  background-image: url("../../images/1424145.svg");
+  background-image: url("../../images/pikrepo.com.jpg");
   background-position: left top;
   background-size: 100%;
+}
+.wrapper-bg-contact {
+  background-image: url("../../images/1320719-666666.svg");
+  background-position: left -250px top -250px;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 480px){
+  .wrapper-bg-contact {
+    background-position: center top;
+    background-size: 150%;
+  }
 }
 .circle
   {
@@ -1851,6 +1864,9 @@ body .is-preload .banner:before {
   .inner .list {
     display: none;
   }
+  .inner .list-white {
+    display: none;
+  }
   .list-sm {
     display: flex;
   }
@@ -1875,12 +1891,17 @@ body .is-preload .banner:before {
 }
 /*關於永大*/
 #main .about-content {
-  background: #fff;
+  background: rgb(255,255,255,.95);
   border-radius: 10px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
   padding: 2rem;
   color: #5B5B5B;
+
+  background-image: url("../../images/37436-666666.svg"), url("../../images/37436-666666.svg"), url("../../images/37436-666666.svg");
+  background-position: right -30%  bottom -5%, left -350px top -30px, right -90% top 40%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 #main .about-content h2 {
   font-weight: 400;
@@ -1896,6 +1917,7 @@ body .is-preload .banner:before {
   @media screen and (max-width: 480px) {
     #main .about-content {
       padding: 1.5rem 0rem;
+      background-image: none;
     }
   }
 
@@ -1942,6 +1964,7 @@ body .is-preload .banner:before {
     width: 200px;
     height: 200px;
     padding: 8px;
+    background-color: #fff;
 
     border: 5px solid #272727;
     color: #000;
@@ -2805,4 +2828,7 @@ footer .copyright .nav-lang a{
   font-size: 36px;
   letter-spacing: 8px;
   color: #444;
+}
+.opacity-98 {
+  opacity: .98;
 }
