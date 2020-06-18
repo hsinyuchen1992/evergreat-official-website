@@ -177,7 +177,7 @@ body, input, select, textarea {
     font-variant-east-asian: normal;
     font-weight: 100;
     font-stretch: normal;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.65rem;
     font-family: 'Roboto', 'Noto Sans TC', Arial, Helvetica, sans-serif;
 }
@@ -1455,6 +1455,7 @@ body .is-preload .banner:before {
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
   padding: 3rem;
+  position: relative;
 }
   @media screen and (max-width: 980px) {
     #main .content {
@@ -1956,7 +1957,6 @@ body .is-preload .banner:before {
   }
 
 .about-content .intro-item-head {
-  display: flex;
   padding: 3rem 1rem;
   min-width: 1600px;
   width: 80%;
@@ -1999,7 +1999,7 @@ body .is-preload .banner:before {
     line-height: 150px;
 }
 .about-content .h-align {
-    display:flex;
+    display:inline-flex;
     align-items:center;
 }
 .about-content .h-align:nth-child(2){
@@ -2020,11 +2020,13 @@ body .is-preload .banner:before {
 @media screen and (max-width: 1600px){
   .about-content .intro-item-head {
     min-width: 100%;
-    align-items: center
   }
   .about-content .intro-item-head img{
-    max-width: 40%;
+    width: 40%;
     height: auto;
+  }
+  .about-content .intro-item-head p{
+    margin: 0;
   }
   .about-content .intro-item img {
     width: 50%;
@@ -2053,13 +2055,10 @@ body .is-preload .banner:before {
     min-width: 100%;
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 20px;
   }
   .about-content .intro-item-head img {
-    /*width: 100%;
-    height: auto;
-    margin: 0;*/
-    display: none;
+    width: 100%;
   }
   .about-content .intro-item-head p {
     width: 100%;
@@ -2712,7 +2711,7 @@ body .is-preload .banner:before {
 }
 .download-itm h4 {
   color: #ADADAD;
-  height: 36px;
+  height: 32px;
 }
 .download-itm img{
   width: 250px;
@@ -2866,6 +2865,12 @@ footer .copyright .nav-lang a{
     text-align: center;
     padding-top: 0;
   }
+}
+.unDraw-download {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 35%;
 }
 .google-map iframe {
   width: 100%;
