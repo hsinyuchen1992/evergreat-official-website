@@ -1932,12 +1932,15 @@ body .is-preload .banner:before {
 }
 /*關於永大*/
 #main .about-content {
-  background: rgb(255,255,255,.95);
+  /*background: rgb(255,255,255,.95);
   border-radius: 10px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 2rem;*/
   color: #272727;
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
 
   background-image: url("../../images/37436-666666.svg");/*, url("../../images/37436-666666.svg");*/
   background-position: right -90% bottom 5%;/*, left -83% top 17%;*/
@@ -1952,7 +1955,7 @@ body .is-preload .banner:before {
 #main .about-content p::first-letter {
   font-size: 28px;
 }
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1400px) {
     #main .about-content {
       padding: 2rem 1rem;
     }
@@ -1971,23 +1974,24 @@ body .is-preload .banner:before {
       background-image: none;
     }
   }
-
 .about-content .intro-item-head {
   padding: 3rem 1rem;
-  min-width: 1600px;
-  width: 80%;
+  width: 1400px;
   height: 350px;
   margin: 0 auto;
+  max-width: 100%;
 }
-.about-content .intro-item-head img {
-  width: 409px;
-  height: 170px;
-}
-
+  .about-content .intro-item-head img{
+    width: 40%;
+    height: auto;
+  }
+  .about-content .intro-item-head p{
+    margin: 0;
+  }
 .about-content .intro-item{
-    padding: 1rem 0;
-    min-width: 1600px;
-    width: 80%;
+  margin: 1rem 0;
+  width: 1400px;
+  max-width: 100%;
 }
 .about-content .right {
   margin-left: 20%;
@@ -2022,7 +2026,7 @@ body .is-preload .banner:before {
     flex-direction: row-reverse;
 }
 .about-content .intro-item img{
-  width: 500px;
+  width: 50%;
   /*box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.15);
   border: 2px solid #fff;*/
 }
@@ -2036,32 +2040,14 @@ body .is-preload .banner:before {
   content: '';
   width: 50px;
 }
-@media screen and (max-width: 1600px){
-  .about-content .intro-item-head {
-    min-width: 100%;
-  }
-  .about-content .intro-item-head img{
-    width: 40%;
-    height: auto;
-  }
-  .about-content .intro-item-head p{
-    margin: 0;
-  }
-  .about-content .intro-item img {
-    width: 50%;
-  }
-  .about-content .intro-item{
-    min-width: 100%;
-    width: 100%;
-  }
-  .about-content .right {
-    margin-left: 0;
-  }
-  .circle-0 {
-    display: none;
-  }
-}
+
+
 @media screen and (max-width: 769px){
+  .about-content .intro-item img{
+    width: 40%;
+    /*box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.15);
+    border: 2px solid #fff;*/
+  }
   .about-content .intro-item .en-h2{
     font-size: 22px;
   }
@@ -2088,19 +2074,20 @@ body .is-preload .banner:before {
     height: auto;
     margin-top: 80px;
   }
-  .about-content .intro-item .right {
+  /*.about-content .intro-item .right {
     min-width: 100%;
     width: 100%;
     position: relative;
   }
   .about-content .intro-item .left {
-    min-width: 100%;
-    width: 100%;
-  }
+
+  }*/
   .about-content .intro-item .h-align:nth-child(2){
     flex-direction: column;
   }
   .about-content .h-align {
+    min-width: 100%;
+    width: 100%;
     display: block;
   }
   .numberCircle {
@@ -2116,6 +2103,7 @@ body .is-preload .banner:before {
     width: 80%;
   }
 }
+
 
 /*產品頁面*/
 * ZOOM CONTAINER */
@@ -2401,7 +2389,7 @@ body .is-preload .banner:before {
   align-items: center;
 }
 .elec-sys .sys-intro img {
-  width: 400px;
+  width: auto;
   height: 530px;
   margin-right: 3rem;
 }
@@ -2849,7 +2837,11 @@ footer .copyright .nav-lang {
 footer .copyright .nav-lang a{
   color: #F0F0F0;
 }
-
+@media screen and (max-width: 769px){
+  footer .content{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 480px){
   footer .content {
     align-items: center;
