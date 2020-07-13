@@ -1623,6 +1623,9 @@ body .is-preload .banner:before {
   color: #000;
   background: #ffffff;
 }
+.brief-intro h2 {
+  font-size: 40px;
+}
 .brief-intro p {
   line-height: 26px;
   max-width: 900px;
@@ -1759,6 +1762,7 @@ body .is-preload .banner:before {
   text-align: center;
   font-weight: 400;
   margin-bottom: 3rem;
+  font-size: 40px;
 }
 .mc-intro {
   margin: 0rem auto;
@@ -1815,7 +1819,7 @@ body .is-preload .banner:before {
     z-index: 1;
   }*/
   .mc-intro .item .text h4{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
     padding-bottom: 15px;
     border-bottom: #555 solid 1px;
@@ -1877,6 +1881,9 @@ body .is-preload .banner:before {
   margin: 5rem auto;
   width: 92%;
   max-width: 1300px;
+}
+.brief-news h2 {
+  font-size: 40px;
 }
 .brief-news-row {
   display: flex;
