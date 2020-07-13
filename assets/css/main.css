@@ -1621,7 +1621,7 @@ body .is-preload .banner:before {
   position: relative;
   padding: 5rem 2rem 7rem;
   color: #000;
-  background: #F5F5F5;
+  background: #ffffff;
 }
 .brief-intro p {
   line-height: 26px;
@@ -1743,7 +1743,7 @@ body .is-preload .banner:before {
     .brief-machine-intro {
       background-attachment: scroll;
       background-position: center;
-      padding: 3.5rem 1.5rem;
+      padding: 5rem 1.5rem;
     }
     .brief-machine-intro p {
       width: 90%;
@@ -1753,7 +1753,12 @@ body .is-preload .banner:before {
   content: '';
   width: 100%;
   background: #F0F0F0;
-  padding: 5rem 0;
+  padding: 3rem 0 5rem;
+}
+.mc-intro-bg h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
 .mc-intro {
   margin: 0rem auto;
@@ -1955,7 +1960,7 @@ body .is-preload .banner:before {
 
 /*YouTube*/
 .yt-videos{
-  margin: 0rem auto 5rem;
+  margin: 5rem auto;
   width: 92%;
   max-width: 1300px;
 
@@ -1969,7 +1974,6 @@ body .is-preload .banner:before {
 }
 .yt-effect:hover{
 -webkit-filter:opacity(1) saturate(1) brightness(1);
-
 }
 
 @media screen and (max-width: 1200px){
