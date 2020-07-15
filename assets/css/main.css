@@ -2901,10 +2901,13 @@ body .is-preload .banner:before {
 .intro-press{
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 3rem;
-  width: 90%;
+  max-width: 1300px;
+}
+.max-1300 {
+  max-width: 1300px;
 }
 .intro-press img{
   border: #ccc solid 1px;
@@ -3002,6 +3005,7 @@ body .is-preload .banner:before {
   display: flex;
 }
 .mold-descript {
+  max-width: 1000px;
   padding: 30px;
 }
 
