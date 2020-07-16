@@ -2200,6 +2200,12 @@ body .is-preload .banner:before {
 .row-reverse {
   flex-direction: row-reverse;
 }
+.cert-list {
+  align-items: center;
+}
+.cert {
+  width: 300px;
+}
 @media screen and (max-width: 769px) {
   .head {
     background-size: auto 600px;
@@ -2218,6 +2224,12 @@ body .is-preload .banner:before {
   }
   .row-reverse {
     flex-direction: column;
+  }
+  .cert {
+    width: 90%;
+  }
+  .cert-head {
+    display: block;
   }
 }
 
