@@ -927,7 +927,7 @@ ul.actions {
     flex-wrap: wrap;
     box-sizing: border-box; }
     .row > * {
-      box-sizing: border-box; }
+      padding: 0 10%; }
     .row.gtr-uniform > * > :last-child {
       margin-bottom: 0; }
 
