@@ -1600,7 +1600,7 @@ body .is-preload .banner:before {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  -webkit-filter:brightness(.6) grayscale(1)/*saturate(0.5)*/;
+  /*-webkit-filter:brightness(.6) grayscale(1);*/
 }
 
 @media screen and (max-width: 480px) {
@@ -2408,7 +2408,7 @@ body .is-preload .banner:before {
 /* FOR IMAGE DEMO */
 .small img                { height: 400px;}
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 480px){
   .small img {
     max-height: 100%;  
     max-width: 100%; 
