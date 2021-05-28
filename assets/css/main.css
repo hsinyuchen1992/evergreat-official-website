@@ -3206,3 +3206,6 @@ footer .copyright .nav-lang a{
 .addr {
   margin-bottom: 10px;
 }
+.hide{
+	display:none;
+}
