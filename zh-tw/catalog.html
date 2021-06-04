@@ -58,6 +58,31 @@
 		<!-- End Google Tag Manager -->
 	</head>
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  theme_color="#4A7949">
+		      </div>
+		      
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -74,12 +99,7 @@
 					<li><a href="about.html">關於永大</a></li>
 					<li><a>產品資訊</a>
 						<ul>
-							<li><a>冷室壓鑄機</a>
-								<ul>
-									<li><a href="dc-machine.html">產品列表</a></li>
-									<li><a href="dc-machine-intro.html">機器特性</a></li>
-								</ul>
-							</li>
+							<li><a href="dc-machine-intro.html">冷室壓鑄機</a></li>
 							<li><a href="peripherial-equipment.html">周邊設備</a></li>
 							<li><a href="press-machine.html">四柱型油壓機</a></li>
 						</ul>
@@ -92,15 +112,15 @@
 			</header>
 
 		<!-- Main -->
-			<section id="main" class="wrapper wrapper-bg-catalog">
-				<div class="circle"></div>
+			<section id="main" class="wrapper wrapper-bg-pantone-g">
+				<div class="deco-block"></div>
 				<div class="inner">
 					<div class="title-white">
 						<h1>電子目錄</h1>
 					</div>
 					<div class="content">
 						<!--img class="unDraw-download" src="../images/undraw_cloud_files_wmo8.svg"-->
-						<div class="row wow fadeInUp" data-wow-duration="1.5s">
+						<div class="row wow fadeIn" data-wow-duration="1.5s">
 							<div class="col-4 col-9-small download-itm">
 								<img src="../images/cover/dc-machine.png" alt="壓鑄機及週邊設備" />
 								<h3>壓鑄機及週邊設備</h3>
@@ -113,12 +133,6 @@
 								<h4>TRP Series Four-column Press Machine</h4>
 								<a href="../documents/press-machine.pdf" class="button small primary" title="TRP系列四柱型油壓機" target="_blank"><i class="fas fa-download"></i> Download</a>
 							</div>
-							<!--div class="col-4 col-9-small download-itm">
-								<img src="../images/cover/mold.png" alt="客製化模具服務" />
-								<h3>客製化模具服務</h3>
-								<h4>Customized Mold</h4>
-								<a href="../documents/mold.pdf" class="button small primary" title="客製化模具服務" target="_blank"><i class="fas fa-download"></i> Download</a>
-							</div-->
 						</div>
 					</div>
 				</div>
@@ -143,7 +157,7 @@
 				</div>
 			</div>
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <b>繁體中文</b>｜<a href="../en/">English</a>
 				</div>

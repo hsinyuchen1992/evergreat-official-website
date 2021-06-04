@@ -38,6 +38,30 @@
 		<!-- End Google Tag Manager -->
 	</head>
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  	theme_color="#4A7949">
+		      </div>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -55,14 +79,9 @@
 				<li><a href="about.html">About</a></li>
 				<li><a>Product</a>
 					<ul>
-						<li><a>Die Casting Machine</a>
-							<ul>
-								<li><a href="dc-machine.html">Product List</a></li>
-								<li><a href="dc-machine-intro.html">Introduction</a></li>
-							</ul>
-						</li>
+						<li><a href="dc-machine-intro.html">Die Casting Machine</a></li>
 						<li><a href="peripherial-equipment.html">Peripherals</a></li>
-						<li><a href="press-machine.html">Press Machine</a></li>
+						<li><a href="press-machine.html">Hydraulic Press</a></li>
 					</ul>
 				</li>
 				<li><a href="catalog.html"><font color="#000"><b>E-Catalog</b></font></a></li>
@@ -73,29 +92,24 @@
 		</header>
 
 		<!-- Main -->
-			<section id="main" class="wrapper wrapper-bg-catalog">
-				<div class="circle"></div>
+			<section id="main" class="wrapper wrapper-bg-pantone-g">
+				<div class="deco-block"></div>
 				<div class="inner">
 					<div class="title-white">
 						<h1>E-Catalog</h1>
 					</div>
 					<div class="content">
-						<div class="row wow fadeInUp" data-wow-duration="1.5s">
+						<div class="row wow fadeIn" data-wow-duration="1.5s">
 							<div class="col-4 col-9-small download-itm">
 								<img src="../images/cover/dc-machine.png" alt="Die Casting Machine & Peripherials" />
 								<h3 class="h3-en">Die Casting Machine & Peripherials</h3>
 								<a href="../documents/dc-machine.pdf" class="button small primary" title="Die Casting Machine & Peripherials" target="_blank"><i class="fas fa-download"></i> Download</a>
 							</div>
 							<div class="col-4 col-9-small download-itm">
-								<img src="../images/cover/press-machine.png" alt="TRP Series Four-column Press Machine" />
-								<h3 class="h3-en">TRP Series Four-column Press Machine</h3>
-								<a href="../documents/press-machine.pdf" class="button small primary" title="TRP Series Four-column Press Machine" target="_blank"><i class="fas fa-download"></i> Download</a>
+								<img src="../images/cover/press-machine.png" alt="TRP Series Four-column Hydraulic Press" />
+								<h3 class="h3-en">TRP Series Four-column Hydraulic Press</h3>
+								<a href="../documents/press-machine.pdf" class="button small primary" title="TRP Series Four-column Hydraulic Press" target="_blank"><i class="fas fa-download"></i> Download</a>
 							</div>
-							<!--div class="col-4 col-9-small download-itm">
-								<img src="../images/cover/mold.png" alt="Customized Mold" />
-								<h3 class="h3-en">Customized Mold</h3>
-								<a href="../documents/mold.pdf" class="button small primary" title="Customized Mold" target="_blank"><i class="fas fa-download"></i> Download</a>
-							</div-->
 						</div>
 					</div>
 				</div>
@@ -135,7 +149,7 @@
 				</div>
 			</div>
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <a href="../zh-tw/">繁體中文</a>｜<b>English</b>
 				</div>

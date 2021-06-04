@@ -13,6 +13,7 @@
 		<meta name="keywords" content="die casting machine, aluminum die casting machine, cold chamber die casting machine, introduction, die casting, Taiwan" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" / >
+		<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
         <link rel="alternate" hreflang="en" href="https://www.evergreatmm.com/en/v3c.html" />
         <link rel="alternate" hreflang="zh-tw" href="https://www.evergreatmm.com/zh-tw/v3c.html" />		
 		<!-- Scripts -->
@@ -22,6 +23,10 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -30,7 +35,32 @@
 		})(window,document,'script','dataLayer','GTM-K5J5W9');</script>
 		<!-- End Google Tag Manager -->
 	</head>
-	<body class="is-preload">
+	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  theme_color="#4A7949">
+		      </div>
+
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -47,82 +77,111 @@
 				<li><a href="about.html">About</a></li>
 				<li><a><font color="#000"><b>Product</b></font></a>
 					<ul>
-						<li><a>Die Casting Machine</a>
-							<ul>
-								<li><a href="dc-machine.html">Product List</a></li>
-								<li><a href="dc-machine-intro.html">Introduction</a></li>
-							</ul>
-						</li>
+						<li><a href="dc-machine-intro.html">Die Casting Machine</a></li>
 						<li><a href="peripherial-equipment.html">Peripherals</a></li>
-						<li><a href="press-machine.html">Press Machine</a></li>
+						<li><a href="press-machine.html">Hydraulic Press</a></li>
 					</ul>
 				</li>
 				<li><a href="catalog.html">E-Catalog</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
-				<li class="lang-choose"><a href="../zh-tw/dc-650.html"><i class="icon fa-globe"></i><b> 中</b></a></li>
+				<li class="lang-choose"><a href="../zh-tw/v3c.html"><i class="icon fa-globe"></i><b> 中</b></a></li>
 			</nav>
 		</header>
 
-
-
 		<!-- Main -->
-			<section id="main" class="wrapper">
+			<section id="main" class="wrapper wrapper-bg-pantone-g">
+				<div class="deco-block-l"></div>
 				<div class="inner">
 					<h1>Die Casting Machine</h1>
 					<div class="list">
 						<div class="links">
-							➤<a href="dc-machine.html"><b>Product List</b></a><a href="dc-150.html">DC-150</a><a href="dc-250.html">DC-250</a><a href="dc-420.html">DC-420</a><a href="dc-650.html">DC-650</a><a href="dc-800.html">DC-800</a>
-						</div>
-						<div class="links">
 							➤<a href="dc-machine-intro.html"><b>Introduction</b></a><a href="v3c.html">V3C Series</a><a href="v4n.html">V4N Series</a>
 						</div>
 					</div>
-					<div class="list-sm">
-						<details class="links">
-							<summary><b>Product List</b></summary>
-							<ul>
-								<li><a href="dc-150.html">DC-150</a></li>
-								<li><a href="dc-250.html">DC-250</a></li>
-								<li><a href="dc-420.html">DC-420</a></li>
-								<li><a href="dc-650.html">DC-650</a></li>
-								<li><a href="dc-800.html">DC-800</a></li>
-							</ul>
-						</details>
-						<details class="links">
-							<summary><b>Introduction</b></summary>
-							<ul>
-								<li><a href="v3c.html">V3C Series</a></li>
-								<li><a href="v4n.html">V4N Series</a></li>
-							</ul>
-						</details>
-					</div>
 					<div class="content-series-en">
-						<h2>Die Casting Machine V3C Series</h2>
-						<div class="intro-content-v3c">
-							<div class="text">
-								<p>V3C is our classic model, which has been developed into a complete series of cold chamber die casting machines.</p>
+						<div class="wow fadeIn" data-wow-duration="1s">
+							<h2>Die Casting Machine V3C Series</h2>
+							<p>V3C is our classic model, which has been developed into a complete series of cold chamber die casting machines.</p>
+						</div>
+						<div class="v3c-intro wow fadeIn" data-wow-duration="1s">
+							<div class="v3c-block">
 								<h3>Mechanism</h3>
 								<ul>
-									<li>Integrated design injection system provides the most excellent injection performance.</li>
-									<li>The structure provides machine with high rigidity and has self-lubricating function and thus extending service life.</li>
-									<li>Improving productivity with peripherals.</li>
-									<li>User-friendly Man-Machine Interface(MMI) with alarm device.</li>
+									<li>Integrated injection unit provides the most excellent injection performance.</li>
+									<li>The structure provides machine with high rigidity</li>
+									<li>The self-lubricating system extends service life.</li>
 								</ul>
-								<h3>Injection Modes</h3>
-								<ul>							
-									<li>Injection Mode: Soft Start with Single Speed, Multi-stage Speed, Constant Acceleration</li>
-									<li>Multi-stage injection adjustment avoids swelling gas in barrel and improves quality of castings as well.</li>
-								</ul>
+								<div>
+									<img src="../images/features/v3c-1.jpg" alt="Die Casting Machine V3C Series">
+									<img src="../images/features/v3c-2.jpg" alt="Die Casting Machine V3C Series">
+								</div>
+							</div>
+							<div class="v3c-block">
 								<h3>Control System</h3>
 								<ul>
-									<li>P/F valve reduces power consumption by more than 15% and allows ease of operation.</li>
+									<li>User-friendly Man-Machine Interface (MMI)</li>
+									<li>Injection Mode: Soft Start with Single Speed, Multi-phase Speed, and Constant Acceleration.</li>
+									<li>Multi-phase injection adjustment avoids swelling gas in barrel.</li>
+									<li>P/F valves reduce power consumption by more than 15% and allows easier operation.</li>
 									<li>Full Test simulates die casting process, which helps operator to observe flow of aluminum liquid during forming.</li>
 								</ul>
 							</div>
-							<div>
-								<img src="../images/features/v3c-1.jpg" alt="Die Casting Machine V3C Series">
-								<img src="../images/features/v3c-2.jpg" alt="Die Casting Machine V3C Series">
+						</div>
+					</div>
+					<div class="mc-content">
+						<div class="wrap">
+							<div class="item">
+								<a href="dc-150.html"><img src="../images/products/square/DC-150V3C.jpg" alt="Die Casting Machine DC-150">
+								<div class="text">
+									<h4>DC-150V3C</h4>
+									<p>
+										<li>Clamping force 150 tons</li>
+										<li>Max. shot speed: 7m/sec</li>
+										<li>Tie-bar spacing 465*465mm</li>
+									</p>
+								</div>
+								</a>
+								<h3>DC-150V3C</h3>
+							</div>
+							<div class="item">
+								<a href="dc-250.html"><img src="../images/products/square/DC-250V3C.jpg" alt="Die Casting Machine DC-250">
+								<div class="text">
+									<h4>DC-250V3C</h4>
+									<p>
+										<li>Clamping force 250 tons</li>
+										<li>Dry injection speed over 6 m/sec</li>
+										<li>Tie-bar spacing 585*585mm</li>
+									</p>
+								</div>
+								</a>
+								<h3>DC-250V3C</h3>
+							</div>
+							<div class="item">
+								<a href="dc-650.html"><img src="../images/products/square/DC-500V3C.jpg" alt="Die Casting Machine DC-650">
+								<div class="text">
+									<h4>DC-650V3C</h4>
+									<p>
+										<li>Clamping force 650 tons</li>
+										<li>Tie-bar spacing 850*850mm</li>
+										<li>Max. injecting weight 7.68kg</li>
+									</p>
+								</div>
+								</a>
+								<h3>DC-650V3C</h3>
+							</div>
+							<div class="item">
+								<a href="dc-800.html"><img src="../images/products/square/DC-800V3C.jpg" alt="Die Casting Machine DC-800">
+								<div class="text">
+									<h4>DC-800V3C</h4>
+									<p>
+										<li>Clamping force 800 tons</li>
+										<li>Tie-bar spacing 950*950mm</li>
+										<li>Max. injecting weight 10.7kg</li>
+									</p>
+								</div>
+								</a>
+								<h3>DC-800V3C</h3>
 							</div>
 						</div>
 					</div>
@@ -167,7 +226,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <a href="../zh-tw/">繁體中文</a>｜<b>English</b>
 				</div>

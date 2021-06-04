@@ -52,6 +52,31 @@
 		<!-- End Google Tag Manager -->
 	</head>
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  theme_color="#4A7949">
+		      </div>
+		      
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -68,12 +93,7 @@
 				<li><a href="about.html">關於永大</a></li>
 				<li><a><font color="#000"><b>產品資訊</b></font></a>
 					<ul>
-						<li><a>冷室壓鑄機</a>
-							<ul>
-								<li><a href="dc-machine.html">產品列表</a></li>
-								<li><a href="dc-machine-intro.html">機器特性</a></li>
-							</ul>
-						</li>
+						<li><a href="dc-machine-intro.html">冷室壓鑄機</a></li>
 						<li><a href="peripherial-equipment.html">周邊設備</a></li>
 						<li><a href="press-machine.html">四柱型油壓機</a></li>
 					</ul>
@@ -86,48 +106,25 @@
 		</header>
 
 		<!-- Main -->
-		<section id="main" class="wrapper">
+		<section id="main" class="wrapper wrapper-bg-pantone-g">
+			<div class="deco-block-l"></div>
 			<div class="inner">
 				<h1>冷室壓鑄機</h1>
-					<div class="list">
-						<div class="links">
-							➤<a href="dc-machine.html"><b>產品列表</b></a><a href="dc-150.html">DC-150</a><a href="dc-250.html">DC-250</a><a href="dc-420.html">DC-420</a><a href="dc-650.html">DC-650</a><a href="dc-800.html">DC-800</a>
-						</div>
-						<div class="links">
-							➤<a href="dc-machine-intro.html"><b>機器特性</b></a><a href="v3c.html">V3C系列</a><a href="v4n.html">V4N系列</a>
-						</div>
-					</div>
-					<div class="list-sm">
-						<details class="links">
-							<summary><b>產品列表</b></summary>
-							<ul>
-								<li><a href="dc-150.html">DC-150</a></li>
-								<li><a href="dc-250.html">DC-250</a></li>
-								<li><a href="dc-420.html">DC-420</a></li>
-								<li><a href="dc-650.html">DC-650</a></li>
-								<li><a href="dc-800.html">DC-800</a></li>
-							</ul>
-						</details>
-						<details class="links">
-							<summary><b>機器特性</b></summary>
-							<ul>
-								<li><a href="v3c.html">V3C系列</a></li>
-								<li><a href="v4n.html">V4N系列</a></li>
-							</ul>
-						</details>
-					</div>
+				<div class="links">
+					➤<a href="dc-machine-intro.html"><b>機器特性</b></a><a href="v3c.html">V3C系列</a><a href="v4n.html">V4N系列</a>
+				</div>
 				<div class="dc-machine-content">
-					<div class="machine-body">
-						<div class="machine-body-txt wow fadeInRight" data-wow-duration="1.5s">
+					<div class="machine-body wow fadeIn" data-wow-duration="1.5s">
+						<div class="machine-body-txt">
 							<h2><b>機體結構</b></h2>
 							<ul>
 								<li>C型架與前機壁為一體成型，確保射出中心的一致性</li>
 								<li>曲手機構大幅增加鎖模時之剛性與穩定性，更確保機壁面的平行精度</li>
-								<li>機壁加厚，提升鎖模穩定性及剛性，將變形量降至最低。</li>
-								<li>超大尺寸之大柱經應力消除，強度高、使用壽命長。</li>
+								<li>機壁加厚，提升鎖模穩定性及剛性，將變形量降至最低</li>
+								<li>超大尺寸之大柱經應力消除，強度高、使用壽命長</li>
 							</ul>
 						</div>
-						<img class="wow fadeIn" data-wow-duration="1.5s" src="../images/features/machine-body.png" alt="機體結構" />
+						<img src="../images/features/machine-body.png" alt="機體結構" />
 					</div>
 
 
@@ -147,18 +144,18 @@
 								<img src="../images/features/features_10.jpg" alt="活塞式蓄壓器" />
 								<div class="ch-text">
 									<h3>活塞式蓄壓器</h3>
-									<p>全系列機種採用活塞式蓄壓器，可積蓄壓力高達210 kg/cm²，並且直接作高壓輸出，可縮短增壓建壓時間，以提升鑄品密緻度。不受液壓油雜質影響，節省維修成本。</p>
+									<p>全系列機種採用活塞式蓄壓器，可積蓄壓力高達210 kg/cm²，並且直接作高壓輸出，可縮短增壓建壓時間，以提升鑄品密緻度。不受雜質影響，節省維修成本。</p>
 								</div>
 							</div>
 							<div class="ch-item">
-								<img src="../images/features/features_08.jpg" alt="潤滑裝置" />
+								<img src="../images/features/features_06.png" alt="潤滑裝置" />
 								<div class="ch-text">
 									<h3>潤滑裝置</h3>
 									<p>全系列機種之曲手使用自潤型銅套，且活動點皆施以滑道油68潤滑，可確保長久精度，減少注油頻率，並增加曲手在極壓情況下的耐受度。</p>
 								</div>
 							</div>
 							<div class="ch-item">
-								<img src="../images/features/features_05.jpg" alt="安全門" />
+								<img src="../images/features/features_05.png" alt="安全門" />
 								<div class="ch-text">
 									<h3>安全門</h3>
 									<p>正反兩側安全門包覆，當安全門打開時，本機所有動作立刻停止，確保人員的安全及機器正常運行，減少環境對機器汙染，進而降低機器故障率。</p>
@@ -173,39 +170,39 @@
 						</div>
 						<div class="characteristic-content wow fadeInUp" data-wow-duration="1.5s">
 							<div class="ch-item">
-								<img src="../images/features/features_02.jpg" alt="自動大柱抽取裝置" />
+								<img src="../images/features/features_02.png" alt="自動大柱抽取裝置" />
 								<div class="ch-text">
 									<h3>自動大柱抽取裝置</h3>
-									<p>上側大柱可抽離前機壁，對於具有油壓中子之模具，提供裝卸時的方便性</p>
+									<p>上側大柱可抽離前機壁，對於具有油壓中子之模具，提供裝卸時的方便性。</p>
 								</div>
 							</div>
 							<div class="ch-item">
-								<img src="../images/features/features_13.jpg" alt="雙射出中心" />
+								<img src="../images/features/features_13.png" alt="雙射出中心" />
 								<div class="ch-text">
 									<h3>雙射出中心</h3>
-									<p>射料位置可依據鑄件的設計，選擇由機器中心或底部射出，射出缸體可按模具射料口位置移動調整</p>
+									<p>可依據鑄件的設計、射料位置的選擇，由機器中心或底部射出，射出缸體可按模具射料口位置移動調整。</p>
 								</div>
 							</div>
 							<div class="ch-item">
-								<img src="../images/features/features_12.jpg" alt="節能液壓" />
+								<img src="../images/features/features_12.png" alt="節能液壓" />
 								<div class="ch-text">
 									<h3>節能液壓</h3>
 									<p>伺服液壓系統使機台液壓效率更高。機台怠速時，伺服電機暫停運轉，因而不耗能；運行時以超高轉速運行，能夠有效減少電能的使用達到35%。</p>
 								</div>
 							</div>
 							<div class="ch-item">
-								<img src="../images/features/features_11.jpg" alt="多段式射出控制" />
+								<img src="../images/features/features_11.png" alt="多段式射出控制" />
 								<div class="ch-text">
 									<h3>多段式射出控制</h3>
-									<p>可提供8段位的射出速度數值化控制模式，可有效排除料管及模腔內空氣，特別適用於大型機器</p>
+									<p>可提供多段位的射出速度數值化控制模式，可有效排除料管及模腔內空氣。</p>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="elec-sys">
-						<div class="sys-intro wow fadeIn" data-wow-duration="1.5s">
-							<img src="../images/index-pic/box.png" alt="電器系統" />
+						<div class="sys-intro wow fadeInUp" data-wow-duration="1.5s">
+							<img src="../images/features/box.png" alt="電器系統" />
 							<div>
 								<h2><b>電器系統</b></h2>
 								<div class="sys-intro-content">
@@ -216,7 +213,7 @@
 											<li>觸控彩色屏幕，操作方便</li>
 											<li>全P/Q控制機械動作</li>
 											<li>可透過人機介面觀察快射、慢進、增壓壓力及速度</li>
-											<li>比例閥的應用，可有效提升操作方便性，及降低電能的消耗達15%以上</li>
+											<li>比例閥提升操作方便性，更可降低電能的消耗達15%以上</li>
 										</ul>
 									</div>
 									<div class="text">
@@ -233,9 +230,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="sys-mode wow fadeIn" data-wow-duration="1.5s">
+					<div class="flow-analysis wow fadeInUp" data-wow-duration="1.5s">
+						<h2>Full Test 實機模流分析</h2>
+						<div>
+							<img src="../images/features/swelling-gas.jpg" alt="Full Test 實機模流分析" />
+							<p>Full Test 功能實機模擬壓鑄過程，清楚了解鋁水於成型過程的流動情況，可使用多段速功能，模擬熔湯進入模腔內流動情形，從中觀察，做出對應解決方案，使熔湯達到快射點之前，呈無捲氣飽管狀態。<br><br>在冷室壓鑄製程中，料管屬於開放空間，熔湯流動過程中，可能捲入大量氣體而將空氣擠入模腔內，嚴重影響鑄件品質。有效選擇低速射出之臨界速度，使熔湯在料管內流動平順而無捲氣產生。<br><br>由於熔湯與料管壁的溫度差，熔湯倒入料管後，會在料管壁形成激冷層而呈固態，在推進的過程中形成捲氣、包氣的情形，經由模擬功能將訊息視覺化，進而調整溫度及射速。</p>
+						</div>
+					</div>
+					<div class="sys-mode">
 						<h2>三種射出模式可供選擇：緩啟單速、多段速、等加速</h2>
-						<div class="mode-list">
+						<div class="mode-list wow fadeInUp" data-wow-duration="1.5s">
 							<div class="mode-item">
 								<img src="../images/features/單速.bmp" alt="緩啟單速" />
 								<img src="../images/features/單速曲線圖.bmp" alt="緩啟單速" />
@@ -250,13 +254,33 @@
 							</div>
 						</div>
 					</div>
-					<div class="flow-analysis">
-						<h2 class="wow fadeInRight" data-wow-duration="1.5s">Full Test 實機模流分析</h2>
-						<div class="wow fadeIn" data-wow-duration="1.5s">
-							<img src="../images/features/swelling-gas.jpg" alt="Full Test 實機模流分析" />
-							<p>Full Test 功能實機模擬壓鑄過程，清楚了解鋁水於成型過程的流動情況，可使用多段速功能，模擬熔湯進入模腔內流動情形，從中觀察，做出對應解決方案，使熔湯達到快射點之前，呈無捲氣飽管狀態。<br><br>在冷室壓鑄製程中，料管屬於開放空間，熔湯流動過程中，可能捲入大量氣體而將空氣擠入模腔內，嚴重影響鑄件品質。有效選擇低速射出之臨界速度，使熔湯在料管內流動平順而無捲氣產生。<br><br>由於熔湯與料管壁的溫度差，熔湯倒入料管後，會在料管壁形成激冷層而呈固態，在推進的過程中形成捲氣、包氣的情形，經由模擬功能將訊息視覺化，進而調整溫度及射速。</p>
+						<div class="yt-videos wow fadeInUp" data-wow-duration="1.5s">
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/2_V2FXkVFjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/SpiL12KkMUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>								
+							</div>
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/g61TYn1fsYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/NqMe_gs_waE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/2iueCR14yJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/HNHB2J3U4-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -281,7 +305,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <b>繁體中文</b>｜<a href="../en/index.html">English</a>
 				</div>

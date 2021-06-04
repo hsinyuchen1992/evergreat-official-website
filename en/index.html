@@ -63,6 +63,31 @@
 	</head>
 
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  theme_color="#4A7949">
+		      </div>
+		      
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -80,14 +105,9 @@
 				<li><a href="about.html">About</a></li>
 				<li><a>Product</a>
 					<ul>
-						<li><a>Die Casting Machine</a>
-							<ul>
-								<li><a href="dc-machine.html">Product List</a></li>
-								<li><a href="dc-machine-intro.html">Introduction</a></li>
-							</ul>
-						</li>
+						<li><a href="dc-machine-intro.html">Die Casting Machine</a></li>
 						<li><a href="peripherial-equipment.html">Peripherals</a></li>
-						<li><a href="press-machine.html">Press Machine</a></li>
+						<li><a href="press-machine.html">Hydraulic Press</a></li>
 					</ul>
 				</li>
 				<li><a href="catalog.html">E-Catalog</a></li>
@@ -115,13 +135,13 @@
 		<section class="brief-intro">
 			<div class="wow fadeInUp" data-wow-duration="1.5s">
 				<h2><b>About EVERGREAT</b></h2>
-				<p>EVERGREAT, founded in 1964 Tainan City, is a manufacturer for cold chamber die casting machines & peripheral equipments. The branch company Machinery Co. was established in ShenZhen, China.</p>
+				<p>EVERGREAT is a manufacturer specializing in cold chamber die casting machines & peripheral equipments. We're founded in 1964, Tainan City and set up the first branch company in ShenZhen, China.</p>
 			</div>
 			<div class="highlights wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
 				<div class="content">
 					<img src="../images/undraw_design_team_af2y.svg">
 					<h3><b>Comprehensive Service</b></h3>
-					<p>We provide complete choices and service for die casting equipments.</p>
+					<p>We provide comprehensive choices and service for die casting equipments.</p>
 				</div>
 				<div class="content">
 					<img src="../images/undraw_upgrade_06a0.svg">
@@ -131,7 +151,7 @@
 				<div class="content">
 					<img src="../images/undraw_progress_data_4ebj.svg">
 					<h3><b>Solid Foundation</b></h3>
-					<p>More than 50-year experience for manufacturing is our solid foundation.</p>
+					<p>More than 50-year experience in manufacturing is our solid foundation.</p>
 				</div>
 			</div>
 		</section>
@@ -140,22 +160,22 @@
 			<div class="brief-news-row">
 				<div class="news">
 					<div class="news-head">
-						<span>2022 / 11 / 10 - 11 / 14</span>
-					</div>
-					<div class="news-content">
-						<h3>TMTS Taiwan International Machine Tool Show</h3>
-						<h4>Taichung, Taiwan</h4>
-						<p>Taichung International Exhibition Center(TCIEC ) & Greater Taichung International Expo Center</p>
-					</div>
-				</div>
-				<div class="news">
-					<div class="news-head">
 						<span>2022 / 1 / 12 - 1 / 15</span>
 					</div>
 					<div class="news-content">
 						<h3>IPF International Plastics, Packaging, Printing Industrial Fair</h3>
 						<h4>Dhaka, Bangladesh</h4>
 						<p>International Convention City Bashundhara (ICCB, Dhaka) / Booth no. 152</p>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news-head">
+						<span>2021 / 4 / 22 - 4 / 26</span>
+					</div>
+					<div class="news-content">
+						<h3>CTMS 2021 - Tainan Automatic Machinery & Intelligent Manufacturing Show</h3>
+						<h4>Tainan, Taiwan</h4>
+						<p>Commercial Exhibition Center Tainan, Tainan City, Taiwan</p>
 					</div>
 				</div>
 				<div class="news">
@@ -174,7 +194,7 @@
 			<h2>Series for EVERGREAT Die Casting Machine</h2>
 			<div class="mc-intro">
 				<a class="item" href="v4n.html">
-					<img src="../images/products/dc-machine-square/DC-250V4N.jpg" alt="die casting machine V4N series">
+					<img src="../images/products/square/DC-250V4N.jpg" alt="die casting machine V4N series">
 					<div class="text">
 						<h4>V4N Series</h4>
 						<p>It provides customers with a more efficient production line and shorter cycle time.</p>
@@ -182,7 +202,7 @@
 					<div class="more">More about V4N series</div>
 				</a>
 				<a class="item" href="v3c.html">
-					<img src="../images/products/dc-machine-square/DC-250V3C.jpg" alt="die casting machine V3C series">
+					<img src="../images/products/square/DC-250V3C.jpg" alt="die casting machine V3C series">
 					<div class="text">
 						<h4>V3C Series</h4>
 						<p>V3C is our classic model, which has been developed into a complete series.</p>
@@ -215,15 +235,6 @@
 				<a href="dc-machine-intro.html">Learn More</a>
 			</div>
 		</section>
-		<section class="yt-videos wow fadeInUp" data-wow-duration="1.5s">
-
-			<div class="video-container yt-effect">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/2_V2FXkVFjQ?controls=0&amp;start=10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="video-container yt-effect">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/g61TYn1fsYI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</section>
 
 		<!-- Footer -->
 		<footer class="footer">
@@ -245,7 +256,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <a href="../zh-tw/">繁體中文</a>｜<b>English</b>
 				</div>

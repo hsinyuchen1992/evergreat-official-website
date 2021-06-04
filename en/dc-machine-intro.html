@@ -32,6 +32,31 @@
 		<!-- End Google Tag Manager -->
 	</head>
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		      <div id="fb-root"></div>
+		      <script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            xfbml            : true,
+		            version          : 'v7.0'
+		          });
+		        };
+
+		        (function(d, s, id) {
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+		        js = d.createElement(s); js.id = id;
+		        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));</script>
+
+		      <!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat"
+		        attribution=setup_tool
+		        page_id="678383568870196"
+		  theme_color="#4A7949">
+		      </div>
+		      
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5J5W9"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -48,14 +73,9 @@
 				<li><a href="about.html">About</a></li>
 				<li><a><font color="#000"><b>Product</b></font></a>
 					<ul>
-						<li><a>Die Casting Machine</a>
-							<ul>
-								<li><a href="dc-machine.html">Product List</a></li>
-								<li><a href="dc-machine-intro.html">Introduction</a></li>
-							</ul>
-						</li>
+						<li><a href="dc-machine-intro.html">Die Casting Machine</a></li>
 						<li><a href="peripherial-equipment.html">Peripherals</a></li>
-						<li><a href="press-machine.html">Press Machine</a></li>
+						<li><a href="press-machine.html">Hydraulic Press</a></li>
 					</ul>
 				</li>
 				<li><a href="catalog.html">E-Catalog</a></li>
@@ -68,51 +88,26 @@
 
 
 		<!-- Main -->
-			<section id="main" class="wrapper">
+			<section id="main" class="wrapper wrapper-bg-pantone-g">
+				<div class="deco-block-l"></div>
 				<div class="inner">
 					<h1>Die Casting Machine</h1>
-					<div class="list">
-						<div class="links">
-							➤<a href="dc-machine.html"><b>Product List</b></a><a href="dc-150.html">DC-150</a><a href="dc-250.html">DC-250</a><a href="dc-420.html">DC-420</a><a href="dc-650.html">DC-650</a><a href="dc-800.html">DC-800</a>
-						</div>
-						<div class="links">
-							➤<a href="dc-machine-intro.html"><b>Introduction</b></a><a href="v3c.html">V3C Series</a><a href="v4n.html">V4N Series</a>
-						</div>
-					</div>
-					<div class="list-sm">
-						<details class="links">
-							<summary><b>Product List</b></summary>
-							<ul>
-								<li><a href="dc-150.html">DC-150</a></li>
-								<li><a href="dc-250.html">DC-250</a></li>
-								<li><a href="dc-420.html">DC-420</a></li>
-								<li><a href="dc-650.html">DC-650</a></li>
-								<li><a href="dc-800.html">DC-800</a></li>
-							</ul>
-						</details>
-						<details class="links">
-							<summary><b>Introduction</b></summary>
-							<ul>
-								<li><a href="v3c.html">V3C Series</a></li>
-								<li><a href="v4n.html">V4N Series</a></li>
-							</ul>
-						</details>
+					<div class="links">
+						➤<a href="dc-machine-intro.html"><b>Introduction</b></a><a href="v3c.html">V3C Series</a><a href="v4n.html">V4N Series</a>
 					</div>
 					<div class="dc-machine-content">
-						<div class="machine-body">
-							<div class="machine-body-txt wow fadeInRight" data-wow-duration="1.5s">
+						<div class="machine-body wow fadeIn" data-wow-duration="1.5s">
+							<div class="machine-body-txt">
 								<h2><b>Machine Structure</b></h2>
 								<ul>
-									<li>We guarantee the excellent injection performance with integrated injection unit. The design ensures both C-shaped frame and front platen align with the injection center, thus providing excellent injection performance.</li>
+									<li>The design ensures both C-shaped frame and front platen align with the injection center, thus providing excellent injection performance.</li>
 									<li>The toggle mechanism makes a perfect match with thick die platens. It ensures the accuracy for the parallelism between die platens.</li>
 									<li>Extra thick die platen provides stability for die clamping and rigidity to keep deformation to a minimum.</li>
 									<li>Oversized tie bar eliminates stress, which provides extra durability and extends service life.</li>
 								</ul>
 							</div>
-							<img class="wow fadeIn" data-wow-duration="1.5s" src="../images/features/machine-body.png" alt="Structure for Die Casting Machine" />
+							<img src="../images/features/machine-body.png" alt="Structure for Die Casting Machine" />
 						</div>
-
-
 						<div class="characteristic">
 							<div class="characteristic-head wow fadeInUp" data-wow-duration="1.5s">
 								<h2><b>Standard</b></h2>
@@ -133,14 +128,14 @@
 									</div>
 								</div>
 								<div class="ch-item">
-									<img src="../images/features/features_08.jpg" alt="Lubricating System" />
+									<img src="../images/features/features_06.png" alt="Lubricating System" />
 									<div class="ch-text">
 										<h3>Lubricating System</h3>
-										<p>All junctions of toggles are equipped with self-lubricating bushings and lubricated with slideway oil No.68. It provides better tolerance for toggles under high pressure.</p>
+										<p>Toggles are equipped with self-lubricating bushings, and all toggle points are lubricated with slideway oil No.68. It provides better tolerance for toggles under high pressure.</p>
 									</div>
 								</div>
 								<div class="ch-item">
-									<img src="../images/features/features_05.jpg" alt="Safety Door" />
+									<img src="../images/features/features_05.png" alt="Safety Door" />
 									<div class="ch-text">
 										<h3>Safety Door</h3>
 										<p>The machine stops immediately when the operator opens the safety door. Besides, this can reduce the failure rate by protecting the machine from environmental pollution.</p>
@@ -155,48 +150,48 @@
 							</div>
 							<div class="characteristic-content wow fadeInUp" data-wow-duration="1.5s">
 								<div class="ch-item">
-									<img src="../images/features/features_02.jpg" alt="Automatic Tie Bar Pull Out Device" />
+									<img src="../images/features/features_02.png" alt="Automatic Tie Bar Pull Out Device" />
 									<div class="ch-text">
 										<h3>Automatic Tie Bar Pull Out Device</h3>
 										<p>The design enables an operator to unload the upper tie bar from the front platen. It provides greater convenience especially for dies with hydraulic cores.</p>
 									</div>
 								</div>
 								<div class="ch-item">
-									<img src="../images/features/features_13.jpg" alt="Two Injection Center" />
+									<img src="../images/features/features_13.png" alt="Two Injection Center" />
 									<div class="ch-text">
 										<h3>Two Injection Center</h3>
-										<p>Both injection position and cylinder can be adjusted according to design of casting or gate position of mold.</p>
+										<p>Both injection position and cylinder can be adjusted according to the design of casting or the gate position of mold.</p>
 									</div>
 								</div>
 								<div class="ch-item">
-									<img src="../images/features/features_12.jpg" alt="Energy-Saving Hydraulic Device" />
+									<img src="../images/features/features_12.png" alt="Energy-Saving Hydraulic Device" />
 									<div class="ch-text">
 										<h3>Energy-Saving Hydraulic Device</h3>
-										<p>The servo-hydraulic system is more hydraulically efficient and saves energy up to 35% by precisely controlling power.</p>
+										<p>The servo-hydraulic system is more efficient and saves energy up to 35% by precisely controlling power.</p>
 									</div>
 								</div>
 								<div class="ch-item">
-									<img src="../images/features/features_11.jpg" alt="Multi-phase Injection Control" />
+									<img src="../images/features/features_11.png" alt="Multi-phase Injection Control" />
 									<div class="ch-text">
 										<h3>Multi-phase Injection Control</h3>
-										<p>It provides a digital control for 8-phase of injection speeds and exhausts air from the barrel and die cavity. This is especially suitable for large models.</p>
+										<p>It provides a digital control for multi-phase injection speeds and exhausts air from the barrel and die cavity.</p>
 									</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="elec-sys">
-							<div class="sys-intro wow fadeIn" data-wow-duration="1.5s">
-								<img src="../images/index-pic/box.png" alt="Control System" />
+							<div class="sys-intro wow fadeInUp" data-wow-duration="1.5s">
+								<img src="../images/features/box.png" alt="Control System" />
 								<div>
 									<h2><b>Control System</b></h2>
 									<div class="sys-intro-content">
 										<div class="text">
 											<h3>Standard</h3>
 											<ul>
-												<li>The three injection phases</li>
+												<li>Three injection phases</li>
 												<li>Color touch screen panel</li>
-												<li>Fully P/Q controlled machine motions</li>
+												<li>Fully P/Q-controlled machine operation</li>
 												<li>Adjustable parameters for the injection phases</li>
 												<li>Energy-saving P/F valves</li>
 											</ul>
@@ -208,16 +203,24 @@
 												<li>Displaying production parameters and curves simultaneously</li>
 												<li>Recording production history</li>
 												<li>Energy-saving servo control integrates into hydraulic system</li>
-												<li>Enhancing casting quality by multi-stage injecting adjustment</li>
+												<li>Enhancing casting quality by multi-phase injecting adjustment</li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="sys-mode wow fadeIn" data-wow-duration="1.5s">
-							<h2>Three Injection Modes:<br>Soft Start with Single Speed/Multi-phase Speed/Constant Acceleration</h2>
-							<div class="mode-list">
+						<div class="flow-analysis wow fadeInUp" data-wow-duration="1.5s">
+							<h2 class="wow fadeIn" data-wow-duration="1.5s">Full Test Mold Flow Analysis</h2>
+							<div>
+								<img src="../images/features/swelling-gas.jpg" alt="Swelling gas in the barrel" />
+								<p>Full Test analysis simulates the die casting process with multi-phase injection control. The function helps an operator to observe flow of aluminum liquid during forming and to make a corresponding solution, and thus making sure to achieve a fully-filled barrel before second-phase injection.<br><br>In the cold chamber die casting process, molten metal contacts with air, causing air swelling. It causes cavities and influences the quality of the product. A proper selection of critical low injection speed can ensure molten metal flows in the barrel smoothly without generating any swelling gas.<br><br>Temperature gap between molten metal and barrel wall causes a cold and solid layer on the barrel wall. The function can help operators to observe swelling gas or wrapped gas during feeding and thus to adjust the temperature and the injection speed.</p>
+							</div>
+						</div>
+						<div class="sys-mode">
+							<h2>Injection Mode (Optional)</h2>
+							<h3>Three Injection Modes: Soft Start with Single Speed / Multi-phase Speed / Constant Acceleration</h3>
+							<div class="mode-list wow fadeInUp" data-wow-duration="1.5s">
 								<div class="mode-item">
 									<img src="../images/features/單速.bmp" alt="Soft Start with Single Speed" />
 									<img src="../images/features/單速曲線圖.bmp" alt="Soft Start with Single Speed" />
@@ -232,11 +235,30 @@
 								</div>
 							</div>
 						</div>
-						<div class="flow-analysis">
-							<h2 class="wow fadeInRight" data-wow-duration="1.5s">Full Test Mold Flow Analysis</h2>
-							<div class="wow fadeIn" data-wow-duration="1.5s">
-								<img src="../images/features/swelling-gas.jpg" alt="Swelling gas in the barrel" />
-								<p>Full Test analysis simulates the die casting process with multi-stage injection control. The function helps an operator to observe flow of aluminum liquid during forming and to make a corresponding solution, and thus making sure to achieve a fully-filled barrel before second-phase injection.<br><br>In the cold chamber die casting process, molten metal contacts with air, then swelling lots of air. It causes cavities and influences the quality of the product. A proper selection of critical low injection speed can ensure molten metal flows in the barrel smoothly without generating any swelling gas.<br><br>Temperature gap between molten metal and barrel wall causes a cold and solid layer on the barrel wall. The function can help operators to observe swelling gas or wrapped gas during feeding and thus to adjust the temperature and the injection speed.</p>
+						<div class="yt-videos wow fadeInUp" data-wow-duration="1.5s">
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/2_V2FXkVFjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/SpiL12KkMUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>								
+							</div>
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/g61TYn1fsYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/NqMe_gs_waE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/2iueCR14yJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="video-container yt-effect">
+									<iframe width="500" height="282" src="https://www.youtube.com/embed/HNHB2J3U4-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -278,7 +300,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>&copy; EVERGREAT Machinery Co. Ltd. All Rights Reserved.</p>
+				<p>&copy; EVERGREAT Machinery Co., Ltd. All Rights Reserved.</p>
 				<div class="nav-lang">
 					<i class="icon fa-globe"></i> <a href="../zh-tw/">繁體中文</a>｜<b>English</b>
 				</div>
