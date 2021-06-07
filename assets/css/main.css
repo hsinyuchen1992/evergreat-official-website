@@ -2520,7 +2520,46 @@ body .is-preload .banner:before {
 }
 
 /*YouTube*/
-.yt-videos{
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 10%;left: 15%;
+  width: 70%;
+  height: 70%;
+}
+@media screen and (max-width: 480px){
+  .video-container iframe, .video-container object, .video-container embed {
+    top: 2%;left: 2%;
+    width: 96%;
+    height: 96%;
+  }
+}
+
+.video-container-about {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container-about iframe, .video-container-about object, .video-container-about embed {
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*.yt-videos{
   padding: 5rem 3rem;
   display: flex;
   align-items: center;
@@ -2570,7 +2609,7 @@ body .is-preload .banner:before {
     width:100%;
     height:100%;
   }
-}
+}*/
 
 /*機器特性*/
 .characteristic {
@@ -2830,6 +2869,7 @@ body .is-preload .banner:before {
   height: 225px;
   border: #ccc solid 1px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+  margin: 0 0 1.5rem;
 }
 .v3c-intro .v3c-block {
   width: 45%;
