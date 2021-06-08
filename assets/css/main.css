@@ -213,7 +213,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 3rem;
   line-height: 1.2; }
 
@@ -2164,6 +2164,9 @@ body .is-preload .banner:before {
 .large p                  { font-size: 16px; width: 600px; }
 
 /* FOR IMAGE DEMO */
+.small {
+  text-align: center;
+}
 .small img                { height: auto; width: 250px;}
 
 @media screen and (max-width: 769px){
