@@ -6,4 +6,4 @@ This is the source code of our latest-version official website.
 * Evergreat Machinery Co., Ltd.
 * chenhsinyu1992@gmail.com
 
-If you are interested in our products please link to [EVERGREAT Official Website](www.evergreatmc.com.tw)!
+If you are interested in our products please link to [EVERGREAT Official Website](www.evergreatmm.com)!
