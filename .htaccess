@@ -1,0 +1,92 @@
+Options +FollowSymlinks -Indexes
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dc\-150v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-150\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dc\-250v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-250\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dc_250\-420\-v4n\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-420\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dc_500\-650\-v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-650\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dc\-800\-v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-800\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_dimensios\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-machine\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_features\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-machine\-intro\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_inquiry\.asp$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/contact\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_machine\-structure\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/dc\-machine\-intro\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_peripheral\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/peripherial\-equipment\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_profile\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/about\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^c_specification\.htm$ "https\:\/\/www\.evergreatmm\.com\/zh\-tw\/catalog\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^index\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dc\-150v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-150\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dc\-250v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-250\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dc_250\-420\-v4n\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-420\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dc_500\-650\-v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-650\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dc\-800\-v3c\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-800\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_dimensios\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-machine\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_features\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-machine\-intro\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_inquiry\.asp$ "https\:\/\/www\.evergreatmm\.com\/en\/contact\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_machine\-structure\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/dc\-machine\-intro\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_peripheral\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/peripherial\-equipment\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_profile\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/about\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^e_specification\.htm$ "https\:\/\/www\.evergreatmm\.com\/en\/catalog\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmc\.com\.tw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.evergreatmc\.com\.tw$
+RewriteRule ^(.*)$ "https\:\/\/www\.evergreatmm\.com\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^evergreatmm\.com$
+RewriteRule ^(.*)$ "https\:\/\/www\.evergreatmm\.com\/$1" [R=301,L]
+ErrorDocument 404 /404.html
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
